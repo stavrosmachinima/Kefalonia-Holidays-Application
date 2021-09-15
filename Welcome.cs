@@ -10,12 +10,17 @@ using System.Windows.Forms;
 
 namespace allhlepidrash
 {
-    public partial class Form1 : Form
+    public partial class Welcome : Form
     {
-        public Form1()
+        public Welcome()
         {
             InitializeComponent();
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            smartPlaning form2 = new smartPlaning();
+            form2.Show();
+        }
     }
 }
