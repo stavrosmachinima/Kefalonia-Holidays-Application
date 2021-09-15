@@ -36,7 +36,12 @@ namespace allhlepidrash
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -54,7 +59,7 @@ namespace allhlepidrash
             this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox1.Location = new System.Drawing.Point(509, 129);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(204, 160);
+            this.richTextBox1.Size = new System.Drawing.Size(232, 160);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "Δουλειά στις 8π.μ.,  Σούπερ Μάρκετ στις 4μ.μ., άθληση  στις 6 μ.μ.\n\n";
             // 
@@ -81,9 +86,9 @@ namespace allhlepidrash
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(596, 243);
+            this.button1.Location = new System.Drawing.Point(618, 243);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(117, 46);
+            this.button1.Size = new System.Drawing.Size(121, 46);
             this.button1.TabIndex = 4;
             this.button1.Text = "Αποστολή";
             this.button1.UseVisualStyleBackColor = true;
@@ -100,12 +105,48 @@ namespace allhlepidrash
             this.label3.TabIndex = 5;
             this.label3.Text = "13033";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(828, 147);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(151, 89);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(855, 111);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(89, 15);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Επέλεξε μέρος";
+            this.label4.Visible = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(715, 196);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(26, 23);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
+            // 
             // smartPlaning
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1053, 461);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -118,6 +159,8 @@ namespace allhlepidrash
             this.Load += new System.EventHandler(this.smartPlaning_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.smartPlaning_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,5 +174,8 @@ namespace allhlepidrash
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
