@@ -126,7 +126,8 @@ namespace allhlepidrash
                 dynamicRichTextBox.Text = "Αυτός είναι ο πιο γρήγορος δρόμος για να εκτελέσετε τα παραπάνω.";
                 pictureBox2.Visible = true;
                 pictureBox3.Visible = true;
-                label4.Visible = true;
+                label5.Visible = true;
+                label4.Visible = false;
                 System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(System.Drawing.Color.White);
                 System.Drawing.Graphics formGraphics;
                 formGraphics = this.CreateGraphics();
@@ -143,6 +144,7 @@ namespace allhlepidrash
                 pictureBox2.Visible = false;
                 pictureBox3.Visible = false;
                 label4.Visible = false;
+                label5.Visible = false;
                 System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(BackColor);
                 System.Drawing.Graphics formGraphics;
                 formGraphics = this.CreateGraphics();

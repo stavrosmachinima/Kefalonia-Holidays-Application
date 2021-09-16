@@ -22,5 +22,23 @@ namespace allhlepidrash
             smartPlaning form2 = new smartPlaning();
             form2.Show();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            smartHome form3 = new smartHome();
+            form3.Show();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            smartTemperature form4 = new smartTemperature();
+            form4.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            servicesForOldPeople form5 = new servicesForOldPeople();
+            form5.Show();
+        }
     }
 }
