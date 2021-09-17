@@ -14,6 +14,8 @@ namespace allhlepidrash
     {
         bool onlyKitchen=true;
         bool onlyLivingRoom = true;
+        String temperatureKitchen ="27 °C";
+        String temperatureLivingRoom= "33 °C";
         public myDesign()
         {
             InitializeComponent();
@@ -48,6 +50,10 @@ namespace allhlepidrash
                     kitchenOn.Visible = false;
                     button4.Visible = true;
                 }
+                temperature.Text =temperatureKitchen;
+                temperature.Visible = true;
+                increase.Visible = true;
+                decrease.Visible = true;
             }
         }
 
@@ -92,6 +98,10 @@ namespace allhlepidrash
                     LivingRoomOff.Visible = true;
                     button4.Visible = true;
                 }
+                temperature.Text = temperatureLivingRoom;
+                temperature.Visible = true;
+                increase.Visible = true;
+                decrease.Visible = true;
             }
         }
 
@@ -154,6 +164,26 @@ namespace allhlepidrash
                 LivingRoomOff.Visible = true;
 
             }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            String s1 = temperature.Text;
+            s1 = s1.Substring(0, 2);
+            int add = int.Parse(s1);
+            add = add + 1;
+            s1 = add.ToString()+ " °C";
+            temperature.Text = s1;
+        }
+
+        private void decrease_Click(object sender, EventArgs e)
+        {
+            String s1 = temperature.Text;
+            s1 = s1.Substring(0, 2);
+            int add = int.Parse(s1);
+            add = add - 1;
+            s1 = add.ToString() + " °C";
+            temperature.Text = s1;
         }
     }
 }

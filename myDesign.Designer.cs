@@ -55,9 +55,9 @@ namespace allhlepidrash
             this.LivingRoomOff = new System.Windows.Forms.PictureBox();
             this.LivingRoomOn = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.temperature = new System.Windows.Forms.TextBox();
+            this.increase = new System.Windows.Forms.PictureBox();
+            this.decrease = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kitchenOn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kitchenOff)).BeginInit();
@@ -77,8 +77,8 @@ namespace allhlepidrash
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LivingRoomOff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LivingRoomOn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.increase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.decrease)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -367,38 +367,41 @@ namespace allhlepidrash
             this.button4.Visible = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // textBox1
+            // temperature
             // 
-            this.textBox1.Location = new System.Drawing.Point(886, 130);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(106, 23);
-            this.textBox1.TabIndex = 29;
-            this.textBox1.Text = "27 °C";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.temperature.Location = new System.Drawing.Point(886, 130);
+            this.temperature.Name = "temperature";
+            this.temperature.Size = new System.Drawing.Size(106, 23);
+            this.temperature.TabIndex = 29;
+            this.temperature.Text = "27 °C";
+            this.temperature.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.temperature.Visible = false;
             // 
-            // pictureBox2
+            // increase
             // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(949, 173);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(43, 44);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 30;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Visible = false;
+            this.increase.Cursor = System.Windows.Forms.Cursors.Default;
+            this.increase.Image = ((System.Drawing.Image)(resources.GetObject("increase.Image")));
+            this.increase.Location = new System.Drawing.Point(949, 173);
+            this.increase.Name = "increase";
+            this.increase.Size = new System.Drawing.Size(43, 44);
+            this.increase.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.increase.TabIndex = 30;
+            this.increase.TabStop = false;
+            this.increase.Visible = false;
+            this.increase.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // pictureBox3
+            // decrease
             // 
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(886, 173);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(43, 44);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 31;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Visible = false;
+            this.decrease.Cursor = System.Windows.Forms.Cursors.Default;
+            this.decrease.Image = ((System.Drawing.Image)(resources.GetObject("decrease.Image")));
+            this.decrease.Location = new System.Drawing.Point(886, 173);
+            this.decrease.Name = "decrease";
+            this.decrease.Size = new System.Drawing.Size(43, 44);
+            this.decrease.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.decrease.TabIndex = 31;
+            this.decrease.TabStop = false;
+            this.decrease.Visible = false;
+            this.decrease.Click += new System.EventHandler(this.decrease_Click);
             // 
             // myDesign
             // 
@@ -406,9 +409,9 @@ namespace allhlepidrash
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aquamarine;
             this.ClientSize = new System.Drawing.Size(1004, 476);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.decrease);
+            this.Controls.Add(this.increase);
+            this.Controls.Add(this.temperature);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.LivingRoomOn);
             this.Controls.Add(this.LivingRoomOff);
@@ -456,8 +459,8 @@ namespace allhlepidrash
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LivingRoomOff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LivingRoomOn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.increase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.decrease)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -490,8 +493,8 @@ namespace allhlepidrash
         private System.Windows.Forms.PictureBox LivingRoomOff;
         private System.Windows.Forms.PictureBox LivingRoomOn;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.TextBox temperature;
+        private System.Windows.Forms.PictureBox increase;
+        private System.Windows.Forms.PictureBox decrease;
     }
 }
