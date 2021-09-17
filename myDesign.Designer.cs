@@ -37,7 +37,7 @@ namespace allhlepidrash
             this.kitchenOff = new System.Windows.Forms.PictureBox();
             this.IconKitchenOn = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.IconLivingRoomOn = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
@@ -46,7 +46,7 @@ namespace allhlepidrash
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
+            this.IconLivingRoomOff = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -55,12 +55,15 @@ namespace allhlepidrash
             this.LivingRoomOff = new System.Windows.Forms.PictureBox();
             this.LivingRoomOn = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kitchenOn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kitchenOff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconKitchenOn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconLivingRoomOn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -69,11 +72,13 @@ namespace allhlepidrash
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconLivingRoomOff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LivingRoomOff)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LivingRoomOn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -111,9 +116,9 @@ namespace allhlepidrash
             // 
             this.kitchenOn.Cursor = System.Windows.Forms.Cursors.Default;
             this.kitchenOn.Image = ((System.Drawing.Image)(resources.GetObject("kitchenOn.Image")));
-            this.kitchenOn.Location = new System.Drawing.Point(650, 98);
+            this.kitchenOn.Location = new System.Drawing.Point(573, 104);
             this.kitchenOn.Name = "kitchenOn";
-            this.kitchenOn.Size = new System.Drawing.Size(239, 141);
+            this.kitchenOn.Size = new System.Drawing.Size(292, 239);
             this.kitchenOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.kitchenOn.TabIndex = 3;
             this.kitchenOn.TabStop = false;
@@ -123,9 +128,9 @@ namespace allhlepidrash
             // 
             this.kitchenOff.Cursor = System.Windows.Forms.Cursors.Default;
             this.kitchenOff.Image = ((System.Drawing.Image)(resources.GetObject("kitchenOff.Image")));
-            this.kitchenOff.Location = new System.Drawing.Point(650, 98);
+            this.kitchenOff.Location = new System.Drawing.Point(573, 104);
             this.kitchenOff.Name = "kitchenOff";
-            this.kitchenOff.Size = new System.Drawing.Size(239, 141);
+            this.kitchenOff.Size = new System.Drawing.Size(292, 239);
             this.kitchenOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.kitchenOff.TabIndex = 4;
             this.kitchenOff.TabStop = false;
@@ -156,16 +161,17 @@ namespace allhlepidrash
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Visible = false;
             // 
-            // pictureBox5
+            // IconLivingRoomOn
             // 
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(166, 253);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(42, 49);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 11;
-            this.pictureBox5.TabStop = false;
+            this.IconLivingRoomOn.Cursor = System.Windows.Forms.Cursors.Default;
+            this.IconLivingRoomOn.Image = ((System.Drawing.Image)(resources.GetObject("IconLivingRoomOn.Image")));
+            this.IconLivingRoomOn.Location = new System.Drawing.Point(166, 253);
+            this.IconLivingRoomOn.Name = "IconLivingRoomOn";
+            this.IconLivingRoomOn.Size = new System.Drawing.Size(42, 49);
+            this.IconLivingRoomOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.IconLivingRoomOn.TabIndex = 11;
+            this.IconLivingRoomOn.TabStop = false;
+            this.IconLivingRoomOn.Click += new System.EventHandler(this.IconLivingRoomOn_Click);
             // 
             // pictureBox6
             // 
@@ -259,17 +265,18 @@ namespace allhlepidrash
             this.pictureBox14.TabIndex = 19;
             this.pictureBox14.TabStop = false;
             // 
-            // pictureBox15
+            // IconLivingRoomOff
             // 
-            this.pictureBox15.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(166, 253);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(41, 49);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 20;
-            this.pictureBox15.TabStop = false;
-            this.pictureBox15.Visible = false;
+            this.IconLivingRoomOff.Cursor = System.Windows.Forms.Cursors.Default;
+            this.IconLivingRoomOff.Image = ((System.Drawing.Image)(resources.GetObject("IconLivingRoomOff.Image")));
+            this.IconLivingRoomOff.Location = new System.Drawing.Point(166, 253);
+            this.IconLivingRoomOff.Name = "IconLivingRoomOff";
+            this.IconLivingRoomOff.Size = new System.Drawing.Size(41, 49);
+            this.IconLivingRoomOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.IconLivingRoomOff.TabIndex = 20;
+            this.IconLivingRoomOff.TabStop = false;
+            this.IconLivingRoomOff.Visible = false;
+            this.IconLivingRoomOff.Click += new System.EventHandler(this.IconLivingRoomOff_Click);
             // 
             // pictureBox16
             // 
@@ -328,9 +335,9 @@ namespace allhlepidrash
             // 
             this.LivingRoomOff.Cursor = System.Windows.Forms.Cursors.Default;
             this.LivingRoomOff.Image = ((System.Drawing.Image)(resources.GetObject("LivingRoomOff.Image")));
-            this.LivingRoomOff.Location = new System.Drawing.Point(650, 98);
+            this.LivingRoomOff.Location = new System.Drawing.Point(573, 104);
             this.LivingRoomOff.Name = "LivingRoomOff";
-            this.LivingRoomOff.Size = new System.Drawing.Size(239, 141);
+            this.LivingRoomOff.Size = new System.Drawing.Size(292, 239);
             this.LivingRoomOff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.LivingRoomOff.TabIndex = 27;
             this.LivingRoomOff.TabStop = false;
@@ -340,9 +347,9 @@ namespace allhlepidrash
             // 
             this.LivingRoomOn.Cursor = System.Windows.Forms.Cursors.Default;
             this.LivingRoomOn.Image = ((System.Drawing.Image)(resources.GetObject("LivingRoomOn.Image")));
-            this.LivingRoomOn.Location = new System.Drawing.Point(650, 98);
+            this.LivingRoomOn.Location = new System.Drawing.Point(573, 104);
             this.LivingRoomOn.Name = "LivingRoomOn";
-            this.LivingRoomOn.Size = new System.Drawing.Size(239, 141);
+            this.LivingRoomOn.Size = new System.Drawing.Size(292, 239);
             this.LivingRoomOn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.LivingRoomOn.TabIndex = 28;
             this.LivingRoomOn.TabStop = false;
@@ -351,14 +358,47 @@ namespace allhlepidrash
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(720, 270);
+            this.button4.Location = new System.Drawing.Point(664, 375);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(86, 32);
+            this.button4.Size = new System.Drawing.Size(99, 37);
             this.button4.TabIndex = 1;
-            this.button4.Text = "Change";
+            this.button4.Text = "Lights";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Visible = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(886, 130);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(106, 23);
+            this.textBox1.TabIndex = 29;
+            this.textBox1.Text = "27 °C";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(949, 173);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(43, 44);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 30;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(886, 173);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(43, 44);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 31;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
             // 
             // myDesign
             // 
@@ -366,6 +406,9 @@ namespace allhlepidrash
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aquamarine;
             this.ClientSize = new System.Drawing.Size(1004, 476);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.LivingRoomOn);
             this.Controls.Add(this.LivingRoomOff);
@@ -374,7 +417,7 @@ namespace allhlepidrash
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.pictureBox16);
-            this.Controls.Add(this.pictureBox15);
+            this.Controls.Add(this.IconLivingRoomOff);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pictureBox13);
             this.Controls.Add(this.pictureBox12);
@@ -383,7 +426,7 @@ namespace allhlepidrash
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.IconLivingRoomOn);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.IconKitchenOn);
             this.Controls.Add(this.kitchenOff);
@@ -399,7 +442,7 @@ namespace allhlepidrash
             ((System.ComponentModel.ISupportInitialize)(this.kitchenOff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.IconKitchenOn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconLivingRoomOn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
@@ -408,11 +451,13 @@ namespace allhlepidrash
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.IconLivingRoomOff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LivingRoomOff)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LivingRoomOn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -427,7 +472,7 @@ namespace allhlepidrash
         private System.Windows.Forms.PictureBox kitchenOff;
         private System.Windows.Forms.PictureBox IconKitchenOn;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox IconLivingRoomOn;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox9;
@@ -436,7 +481,7 @@ namespace allhlepidrash
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox15;
+        private System.Windows.Forms.PictureBox IconLivingRoomOff;
         private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.Button button1;
@@ -445,5 +490,8 @@ namespace allhlepidrash
         private System.Windows.Forms.PictureBox LivingRoomOff;
         private System.Windows.Forms.PictureBox LivingRoomOn;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

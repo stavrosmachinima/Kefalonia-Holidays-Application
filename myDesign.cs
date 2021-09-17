@@ -51,12 +51,6 @@ namespace allhlepidrash
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-           
-
-        }
-
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             IconKitchenOn.Visible = false;
@@ -77,13 +71,27 @@ namespace allhlepidrash
         {
             if (onlyLivingRoom)
             {
-                onlyLivingRoom = false;
-                onlyKitchen = true;
-                kitchenOff.Visible = false;
-                kitchenOn.Visible = false;
-                LivingRoomOff.Visible = false;
-                LivingRoomOn.Visible = true;
-                button4.Visible = true;
+                if (IconLivingRoomOn.Visible == true)
+                {
+                    onlyLivingRoom = false;
+                    onlyKitchen = true;
+                    kitchenOff.Visible = false;
+                    kitchenOn.Visible = false;
+                    LivingRoomOff.Visible = false;
+                    LivingRoomOn.Visible = true;
+                    button4.Visible = true;
+
+                }
+                else if(IconLivingRoomOff.Visible==true)
+                {
+                    onlyLivingRoom = false;
+                    onlyKitchen = true;
+                    kitchenOff.Visible = false;
+                    kitchenOn.Visible = false;
+                    LivingRoomOn.Visible = false;
+                    LivingRoomOff.Visible = true;
+                    button4.Visible = true;
+                }
             }
         }
 
@@ -107,18 +115,41 @@ namespace allhlepidrash
                 kitchenOn.Visible = true;
                 kitchenOff.Visible = false;
             }
-            else if (LivingRoomOff.Visible == true)
+            else if (LivingRoomOn.Visible == true)
             {
-                IconKitchenOff.Visible = false;
-                IconKitchenOn.Visible = false;
-                LivingRoomOff.Visible = false;
-                LivingRoomOn.Visible = true;
+                kitchenOff.Visible = false;
+                kitchenOn.Visible = false;
+                LivingRoomOn.Visible = false;
+                LivingRoomOff.Visible = true;
 
             }
             else if (LivingRoomOff.Visible == true)
             {
-                IconKitchenOff.Visible = false;
-                IconKitchenOn.Visible = false;
+                kitchenOff.Visible = false;
+                kitchenOn.Visible = false;
+                LivingRoomOff.Visible = false;
+                LivingRoomOn.Visible = true;
+
+            }
+        }
+
+        private void IconLivingRoomOff_Click(object sender, EventArgs e)
+        {
+                IconLivingRoomOff.Visible = false;
+                IconLivingRoomOn.Visible = true;
+            if (kitchenOff.Visible == false && kitchenOn.Visible == false)
+            {
+                LivingRoomOff.Visible = false;
+                LivingRoomOn.Visible = true;
+            }
+        }
+
+        private void IconLivingRoomOn_Click(object sender, EventArgs e)
+        {
+                IconLivingRoomOn.Visible = false;
+                IconLivingRoomOff.Visible = true;
+            if (kitchenOff.Visible == false && kitchenOn.Visible == false)
+            {
                 LivingRoomOn.Visible = false;
                 LivingRoomOff.Visible = true;
 
