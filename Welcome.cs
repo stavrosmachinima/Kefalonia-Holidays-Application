@@ -40,5 +40,17 @@ namespace allhlepidrash
             servicesForOldPeople form5 = new servicesForOldPeople();
             form5.Show();
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            onlineDelivery form6 = new onlineDelivery();
+            form6.Show();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            myDesign form7 = new myDesign();
+            form7.Show();
+        }
     }
 }
