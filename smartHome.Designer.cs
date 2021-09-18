@@ -90,6 +90,7 @@ namespace allhlepidrash
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "smartHome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "smartHome";
             this.Load += new System.EventHandler(this.smartHome_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.smartHome_Paint);

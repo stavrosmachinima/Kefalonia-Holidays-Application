@@ -58,6 +58,9 @@ namespace allhlepidrash
             this.temperature = new System.Windows.Forms.TextBox();
             this.increase = new System.Windows.Forms.PictureBox();
             this.decrease = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kitchenOn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kitchenOff)).BeginInit();
@@ -138,7 +141,7 @@ namespace allhlepidrash
             // 
             // IconKitchenOn
             // 
-            this.IconKitchenOn.Cursor = System.Windows.Forms.Cursors.Default;
+            this.IconKitchenOn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IconKitchenOn.Image = ((System.Drawing.Image)(resources.GetObject("IconKitchenOn.Image")));
             this.IconKitchenOn.Location = new System.Drawing.Point(421, 104);
             this.IconKitchenOn.Name = "IconKitchenOn";
@@ -151,7 +154,7 @@ namespace allhlepidrash
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
             this.pictureBox8.Location = new System.Drawing.Point(461, 209);
             this.pictureBox8.Name = "pictureBox8";
@@ -163,7 +166,7 @@ namespace allhlepidrash
             // 
             // IconLivingRoomOn
             // 
-            this.IconLivingRoomOn.Cursor = System.Windows.Forms.Cursors.Default;
+            this.IconLivingRoomOn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IconLivingRoomOn.Image = ((System.Drawing.Image)(resources.GetObject("IconLivingRoomOn.Image")));
             this.IconLivingRoomOn.Location = new System.Drawing.Point(166, 253);
             this.IconLivingRoomOn.Name = "IconLivingRoomOn";
@@ -175,7 +178,7 @@ namespace allhlepidrash
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(74, 317);
             this.pictureBox6.Name = "pictureBox6";
@@ -187,9 +190,9 @@ namespace allhlepidrash
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(441, 301);
+            this.pictureBox7.Location = new System.Drawing.Point(461, 313);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(41, 49);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -198,7 +201,7 @@ namespace allhlepidrash
             // 
             // pictureBox9
             // 
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(321, 345);
             this.pictureBox9.Name = "pictureBox9";
@@ -210,7 +213,7 @@ namespace allhlepidrash
             // 
             // pictureBox10
             // 
-            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
             this.pictureBox10.Location = new System.Drawing.Point(74, 104);
             this.pictureBox10.Name = "pictureBox10";
@@ -221,7 +224,7 @@ namespace allhlepidrash
             // 
             // IconKitchenOff
             // 
-            this.IconKitchenOff.Cursor = System.Windows.Forms.Cursors.Default;
+            this.IconKitchenOff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IconKitchenOff.Image = ((System.Drawing.Image)(resources.GetObject("IconKitchenOff.Image")));
             this.IconKitchenOff.Location = new System.Drawing.Point(421, 104);
             this.IconKitchenOff.Name = "IconKitchenOff";
@@ -233,7 +236,7 @@ namespace allhlepidrash
             // 
             // pictureBox12
             // 
-            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
             this.pictureBox12.Location = new System.Drawing.Point(461, 209);
             this.pictureBox12.Name = "pictureBox12";
@@ -244,9 +247,9 @@ namespace allhlepidrash
             // 
             // pictureBox13
             // 
-            this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(441, 301);
+            this.pictureBox13.Location = new System.Drawing.Point(460, 313);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(42, 49);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -256,18 +259,18 @@ namespace allhlepidrash
             // 
             // pictureBox14
             // 
-            this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
             this.pictureBox14.Location = new System.Drawing.Point(321, 345);
             this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(42, 49);
+            this.pictureBox14.Size = new System.Drawing.Size(47, 49);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 19;
             this.pictureBox14.TabStop = false;
             // 
             // IconLivingRoomOff
             // 
-            this.IconLivingRoomOff.Cursor = System.Windows.Forms.Cursors.Default;
+            this.IconLivingRoomOff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.IconLivingRoomOff.Image = ((System.Drawing.Image)(resources.GetObject("IconLivingRoomOff.Image")));
             this.IconLivingRoomOff.Location = new System.Drawing.Point(166, 253);
             this.IconLivingRoomOff.Name = "IconLivingRoomOff";
@@ -280,9 +283,9 @@ namespace allhlepidrash
             // 
             // pictureBox16
             // 
-            this.pictureBox16.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
-            this.pictureBox16.Location = new System.Drawing.Point(74, 317);
+            this.pictureBox16.Location = new System.Drawing.Point(75, 317);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(41, 49);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -291,7 +294,7 @@ namespace allhlepidrash
             // 
             // pictureBox17
             // 
-            this.pictureBox17.Cursor = System.Windows.Forms.Cursors.Default;
+            this.pictureBox17.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
             this.pictureBox17.Location = new System.Drawing.Point(74, 104);
             this.pictureBox17.Name = "pictureBox17";
@@ -303,6 +306,7 @@ namespace allhlepidrash
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Location = new System.Drawing.Point(119, 209);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 30);
@@ -313,6 +317,7 @@ namespace allhlepidrash
             // 
             // button2
             // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Location = new System.Drawing.Point(389, 173);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(73, 30);
@@ -330,6 +335,7 @@ namespace allhlepidrash
             this.label3.Size = new System.Drawing.Size(115, 25);
             this.label3.TabIndex = 25;
             this.label3.Text = "Room Status";
+            this.label3.Visible = false;
             // 
             // LivingRoomOff
             // 
@@ -357,6 +363,7 @@ namespace allhlepidrash
             // 
             // button4
             // 
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button4.Location = new System.Drawing.Point(664, 375);
             this.button4.Name = "button4";
@@ -379,7 +386,7 @@ namespace allhlepidrash
             // 
             // increase
             // 
-            this.increase.Cursor = System.Windows.Forms.Cursors.Default;
+            this.increase.Cursor = System.Windows.Forms.Cursors.Hand;
             this.increase.Image = ((System.Drawing.Image)(resources.GetObject("increase.Image")));
             this.increase.Location = new System.Drawing.Point(949, 173);
             this.increase.Name = "increase";
@@ -392,7 +399,7 @@ namespace allhlepidrash
             // 
             // decrease
             // 
-            this.decrease.Cursor = System.Windows.Forms.Cursors.Default;
+            this.decrease.Cursor = System.Windows.Forms.Cursors.Hand;
             this.decrease.Image = ((System.Drawing.Image)(resources.GetObject("decrease.Image")));
             this.decrease.Location = new System.Drawing.Point(886, 173);
             this.decrease.Name = "decrease";
@@ -403,12 +410,45 @@ namespace allhlepidrash
             this.decrease.Visible = false;
             this.decrease.Click += new System.EventHandler(this.decrease_Click);
             // 
+            // button3
+            // 
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Location = new System.Drawing.Point(122, 104);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(89, 30);
+            this.button3.TabIndex = 32;
+            this.button3.Text = "Dining Room";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.Location = new System.Drawing.Point(122, 313);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(89, 30);
+            this.button5.TabIndex = 33;
+            this.button5.Text = "Bedroom 1";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.Location = new System.Drawing.Point(374, 317);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(89, 30);
+            this.button6.TabIndex = 34;
+            this.button6.Text = "Bedroom 2";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
             // myDesign
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aquamarine;
             this.ClientSize = new System.Drawing.Size(1004, 476);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.decrease);
             this.Controls.Add(this.increase);
             this.Controls.Add(this.temperature);
@@ -438,6 +478,7 @@ namespace allhlepidrash
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "myDesign";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "myDesign";
             this.Load += new System.EventHandler(this.myDesign_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -496,5 +537,8 @@ namespace allhlepidrash
         private System.Windows.Forms.TextBox temperature;
         private System.Windows.Forms.PictureBox increase;
         private System.Windows.Forms.PictureBox decrease;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }

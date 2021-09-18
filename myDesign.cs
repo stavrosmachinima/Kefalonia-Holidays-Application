@@ -54,6 +54,7 @@ namespace allhlepidrash
                 temperature.Visible = true;
                 increase.Visible = true;
                 decrease.Visible = true;
+                label3.Visible = true;
             }
         }
 
@@ -61,16 +62,22 @@ namespace allhlepidrash
         {
             IconKitchenOn.Visible = false;
             IconKitchenOff.Visible = true;
-            kitchenOn.Visible = false;
-            kitchenOff.Visible = true;
+            if (kitchenOff.Visible == true || kitchenOn.Visible == true)
+            {
+                kitchenOn.Visible = false;
+                kitchenOff.Visible = true;
+            }
         }
 
         private void pictureBox11_Click(object sender, EventArgs e)
         {
             IconKitchenOn.Visible = true;
-            kitchenOff.Visible = false;
-            kitchenOn.Visible = true;
-            IconKitchenOff.Visible =false;
+            IconKitchenOff.Visible = false;
+            if (kitchenOff.Visible == true || kitchenOn.Visible == true)
+            {
+                kitchenOff.Visible = false;
+                kitchenOn.Visible = true;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -102,6 +109,7 @@ namespace allhlepidrash
                 temperature.Visible = true;
                 increase.Visible = true;
                 decrease.Visible = true;
+                label3.Visible = true;
             }
         }
 
@@ -147,7 +155,7 @@ namespace allhlepidrash
         {
                 IconLivingRoomOff.Visible = false;
                 IconLivingRoomOn.Visible = true;
-            if (kitchenOff.Visible == false && kitchenOn.Visible == false)
+            if (LivingRoomOff.Visible == true || LivingRoomOn.Visible == true)
             {
                 LivingRoomOff.Visible = false;
                 LivingRoomOn.Visible = true;
@@ -158,7 +166,7 @@ namespace allhlepidrash
         {
                 IconLivingRoomOn.Visible = false;
                 IconLivingRoomOff.Visible = true;
-            if (kitchenOff.Visible == false && kitchenOn.Visible == false)
+            if (LivingRoomOff.Visible == true || LivingRoomOn.Visible == true)
             {
                 LivingRoomOn.Visible = false;
                 LivingRoomOff.Visible = true;
@@ -173,6 +181,7 @@ namespace allhlepidrash
             int add = int.Parse(s1);
             add = add + 1;
             s1 = add.ToString()+ " °C";
+            temperatureKitchen = s1;
             temperature.Text = s1;
         }
 
@@ -183,6 +192,7 @@ namespace allhlepidrash
             int add = int.Parse(s1);
             add = add - 1;
             s1 = add.ToString() + " °C";
+            temperatureLivingRoom = s1;
             temperature.Text = s1;
         }
     }

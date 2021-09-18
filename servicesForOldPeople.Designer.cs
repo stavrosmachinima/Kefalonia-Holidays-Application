@@ -104,6 +104,7 @@ namespace allhlepidrash
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Name = "servicesForOldPeople";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "servicesForOldPeople";
             this.Load += new System.EventHandler(this.servicesForOldPeople_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
