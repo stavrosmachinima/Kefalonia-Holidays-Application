@@ -22,6 +22,16 @@ namespace allhlepidrash
 
         private void smartPlaning_Load(object sender, EventArgs e)
         {
+            if (soundPlayer.doYouHearMusic)
+            {
+                pictureBox5.Visible = true;
+                pictureBox4.Visible = false;
+            }
+            else
+            {
+                pictureBox5.Visible = false;
+                pictureBox4.Visible = true;
+            }
         }
 
         private void smartPlaning_Paint(object sender, PaintEventArgs e)
@@ -167,6 +177,26 @@ namespace allhlepidrash
             dynamicRichTextBox.Name = "DynamicRichTextBox";
             dynamicRichTextBox.Font = new Font("Segoe UI", 12);
         }
-       
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            soundPlayer.soundVariable.Play();
+            soundPlayer.doYouHearMusic = true;
+            pictureBox4.Visible = false;
+            pictureBox5.Visible = true;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            soundPlayer.soundVariable.Stop();
+            soundPlayer.doYouHearMusic = false;
+            pictureBox5.Visible = false;
+            pictureBox4.Visible = true;
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

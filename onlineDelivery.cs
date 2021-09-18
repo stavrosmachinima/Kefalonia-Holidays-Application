@@ -31,7 +31,16 @@ namespace allhlepidrash
 
         private void onlineDelivery_Load(object sender, EventArgs e)
         {
-
+            if (soundPlayer.doYouHearMusic)
+            {
+                pictureBox21.Visible = true;
+                pictureBox20.Visible = false;
+            }
+            else
+            {
+                pictureBox21.Visible = false;
+                pictureBox20.Visible = true;
+            }
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -228,6 +237,27 @@ namespace allhlepidrash
                 MessageBox.Show("You should fill all information to move on.");
             }
             
+        }
+
+        private void pictureBox20_Click(object sender, EventArgs e)
+        {
+            soundPlayer.soundVariable.Play();
+            soundPlayer.doYouHearMusic = true;
+            pictureBox20.Visible = false;
+            pictureBox21.Visible = true;
+        }
+
+        private void pictureBox21_Click(object sender, EventArgs e)
+        {
+            soundPlayer.soundVariable.Stop();
+            soundPlayer.doYouHearMusic = false;
+            pictureBox21.Visible = false;
+            pictureBox20.Visible = true;
+        }
+
+        private void pictureBox22_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

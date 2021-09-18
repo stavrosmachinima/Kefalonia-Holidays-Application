@@ -23,7 +23,16 @@ namespace allhlepidrash
 
         private void myDesign_Load(object sender, EventArgs e)
         {
-
+            if (soundPlayer.doYouHearMusic)
+            {
+                pictureBox2.Visible = true;
+                pictureBox3.Visible = false;
+            }
+            else
+            {
+                pictureBox2.Visible = false;
+                pictureBox3.Visible = true;
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -194,6 +203,27 @@ namespace allhlepidrash
             s1 = add.ToString() + " °C";
             temperatureLivingRoom = s1;
             temperature.Text = s1;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            soundPlayer.soundVariable.Play();
+            soundPlayer.doYouHearMusic = true;
+            pictureBox3.Visible = false;
+            pictureBox2.Visible = true;
+        }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            soundPlayer.soundVariable.Stop();
+            soundPlayer.doYouHearMusic = false;
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = true;
+        }
+
+        private void pictureBox4_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
