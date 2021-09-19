@@ -161,7 +161,6 @@ namespace allhlepidrash
             // 
             this.textBox1.Location = new System.Drawing.Point(256, 96);
             this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "0";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(119, 23);
             this.textBox1.TabIndex = 7;
@@ -348,7 +347,6 @@ namespace allhlepidrash
             // 
             this.textBox4.Location = new System.Drawing.Point(699, 92);
             this.textBox4.Name = "textBox4";
-            this.textBox4.PlaceholderText = "0";
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(119, 23);
             this.textBox4.TabIndex = 23;
@@ -407,7 +405,6 @@ namespace allhlepidrash
             // 
             this.textBox5.Location = new System.Drawing.Point(699, 214);
             this.textBox5.Name = "textBox5";
-            this.textBox5.PlaceholderText = "0";
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(117, 23);
             this.textBox5.TabIndex = 25;
@@ -442,7 +439,6 @@ namespace allhlepidrash
             // 
             this.textBox6.Location = new System.Drawing.Point(701, 335);
             this.textBox6.Name = "textBox6";
-            this.textBox6.PlaceholderText = "0";
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(117, 23);
             this.textBox6.TabIndex = 30;
