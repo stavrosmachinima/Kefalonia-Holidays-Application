@@ -91,5 +91,20 @@ namespace allhlepidrash
                 pictureBox8.Visible = true;
             }
         }
+
+        private void contextMenuStrip1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Yo mama");
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\..\..\bestHelpInTown.chm");
+        }
     }
 }

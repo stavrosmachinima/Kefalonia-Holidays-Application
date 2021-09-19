@@ -198,5 +198,10 @@ namespace allhlepidrash
         {
             this.Close();
         }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\..\..\bestHelpInTown.chm");
+        }
     }
 }

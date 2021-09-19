@@ -225,5 +225,15 @@ namespace allhlepidrash
         {
             this.Close();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Help.ShowHelp(this, @"..\..\..\bestHelpInTown.chm");
+        }
     }
 }
