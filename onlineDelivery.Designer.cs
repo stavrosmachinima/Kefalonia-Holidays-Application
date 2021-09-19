@@ -661,7 +661,6 @@ namespace allhlepidrash
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox22.TabIndex = 51;
             this.pictureBox22.TabStop = false;
-            this.pictureBox22.Visible = false;
             this.pictureBox22.Click += new System.EventHandler(this.pictureBox22_Click);
             // 
             // pictureBox23
