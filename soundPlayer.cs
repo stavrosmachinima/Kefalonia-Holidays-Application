@@ -19,7 +19,7 @@ namespace allhlepidrash
         {
             try
             {
-                _soundPlayer = new SoundPlayer("audio//jazz.wav");
+                _soundPlayer = new SoundPlayer("..//..//..//audio//jazz.wav");
                 // boolean gia na doume an akougetai kati
                 _sound = true;
             }

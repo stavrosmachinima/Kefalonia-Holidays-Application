@@ -466,7 +466,7 @@ namespace allhlepidrash
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(902, 3);
+            this.pictureBox3.Location = new System.Drawing.Point(902, 2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(75, 62);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -489,7 +489,7 @@ namespace allhlepidrash
             // 
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(86, 2);
+            this.pictureBox4.Location = new System.Drawing.Point(12, 3);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(72, 50);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -501,7 +501,7 @@ namespace allhlepidrash
             // 
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(12, 2);
+            this.pictureBox5.Location = new System.Drawing.Point(103, 2);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(60, 51);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

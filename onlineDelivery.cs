@@ -264,5 +264,95 @@ namespace allhlepidrash
         {
             Help.ShowHelp(this, @"..\..\..\bestHelpInTown.chm");
         }
+
+        private void textBox5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox9_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Only digits are allowed.");
+            }
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox12_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Only digits are allowed.");
+            }
+        }
+
+        private void textBox11_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Only two digits are allowed.");
+            }
+        }
+
+        private void textBox10_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Only text is allowed.");
+            }
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void textBox8_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+                MessageBox.Show("Only digits are allowed.");
+            }
+
+            // oxi backspace
+
+            if (e.KeyChar == (char)Keys.Back)
+            {
+                textBox8.Text = "";
+                return;
+            }
+
+            // ka8e 4 pros8etei keno
+            String cardNumber = textBox8.Text;
+            if (cardNumber.Length > 0 && cardNumber.Length <19)
+            {
+                String temp = cardNumber.Replace(" ", "");
+
+                if (temp.Length % 4 == 0)
+                {
+                    cardNumber = cardNumber + " ";
+                    textBox8.Text = cardNumber;
+                    textBox8.Focus();
+                    textBox8.SelectionStart = textBox8.Text.Length;
+                }
+
+            }
+        }
     }
 }

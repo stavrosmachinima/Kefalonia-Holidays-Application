@@ -410,6 +410,8 @@ namespace allhlepidrash
             this.textBox5.TabIndex = 25;
             this.textBox5.Text = "0";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
             // 
             // pictureBox17
             // 
@@ -484,12 +486,15 @@ namespace allhlepidrash
             // 
             this.textBox8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox8.Location = new System.Drawing.Point(183, 215);
+            this.textBox8.MaxLength = 19;
             this.textBox8.Name = "textBox8";
             this.textBox8.PlaceholderText = "4564 9875 1285 1287";
             this.textBox8.Size = new System.Drawing.Size(201, 29);
             this.textBox8.TabIndex = 36;
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox8.Visible = false;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
+            this.textBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox8_KeyPress);
             // 
             // label9
             // 
@@ -506,12 +511,14 @@ namespace allhlepidrash
             // 
             this.textBox9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox9.Location = new System.Drawing.Point(614, 215);
+            this.textBox9.MaxLength = 3;
             this.textBox9.Name = "textBox9";
             this.textBox9.PlaceholderText = "123";
             this.textBox9.Size = new System.Drawing.Size(122, 29);
             this.textBox9.TabIndex = 38;
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox9.Visible = false;
+            this.textBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox9_KeyPress);
             // 
             // label10
             // 
@@ -534,6 +541,7 @@ namespace allhlepidrash
             this.textBox10.TabIndex = 40;
             this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox10.Visible = false;
+            this.textBox10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox10_KeyPress);
             // 
             // label11
             // 
@@ -550,12 +558,14 @@ namespace allhlepidrash
             // 
             this.textBox11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox11.Location = new System.Drawing.Point(614, 345);
+            this.textBox11.MaxLength = 2;
             this.textBox11.Name = "textBox11";
             this.textBox11.PlaceholderText = "08";
             this.textBox11.Size = new System.Drawing.Size(107, 29);
             this.textBox11.TabIndex = 42;
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox11.Visible = false;
+            this.textBox11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox11_KeyPress);
             // 
             // label12
             // 
@@ -572,12 +582,15 @@ namespace allhlepidrash
             // 
             this.textBox12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox12.Location = new System.Drawing.Point(767, 344);
+            this.textBox12.MaxLength = 2;
             this.textBox12.Name = "textBox12";
             this.textBox12.PlaceholderText = "26";
             this.textBox12.Size = new System.Drawing.Size(107, 29);
             this.textBox12.TabIndex = 44;
             this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox12.Visible = false;
+            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
+            this.textBox12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox12_KeyPress);
             // 
             // label13
             // 
@@ -642,7 +655,7 @@ namespace allhlepidrash
             // 
             this.pictureBox21.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
-            this.pictureBox21.Location = new System.Drawing.Point(875, 12);
+            this.pictureBox21.Location = new System.Drawing.Point(875, 11);
             this.pictureBox21.Name = "pictureBox21";
             this.pictureBox21.Size = new System.Drawing.Size(75, 62);
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -655,7 +668,7 @@ namespace allhlepidrash
             // 
             this.pictureBox22.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
-            this.pictureBox22.Location = new System.Drawing.Point(86, 13);
+            this.pictureBox22.Location = new System.Drawing.Point(12, 12);
             this.pictureBox22.Name = "pictureBox22";
             this.pictureBox22.Size = new System.Drawing.Size(68, 54);
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -667,7 +680,7 @@ namespace allhlepidrash
             // 
             this.pictureBox23.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
-            this.pictureBox23.Location = new System.Drawing.Point(5, 12);
+            this.pictureBox23.Location = new System.Drawing.Point(106, 11);
             this.pictureBox23.Name = "pictureBox23";
             this.pictureBox23.Size = new System.Drawing.Size(61, 55);
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

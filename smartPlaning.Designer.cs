@@ -44,6 +44,10 @@ namespace allhlepidrash
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -51,32 +55,34 @@ namespace allhlepidrash
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(175, 89);
+            this.pictureBox1.Location = new System.Drawing.Point(135, 46);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(240, 279);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.Size = new System.Drawing.Size(223, 430);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.richTextBox1.Location = new System.Drawing.Point(509, 129);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(251, 177);
+            this.richTextBox1.Size = new System.Drawing.Size(251, 268);
             this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "Δουλειά στις 8π.μ.,  Σούπερ Μάρκετ στις 4μ.μ., άθληση  στις 6 μ.μ.\n\n";
+            this.richTextBox1.Text = "Δουλειά στις 8π.μ,\nΣούπερ Μάρκετ στις 4μ.μ.\nάθληση  στις 6 μ.μ.\n";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(559, 105);
+            this.label1.Location = new System.Drawing.Point(559, 88);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(148, 21);
             this.label1.TabIndex = 2;
@@ -96,7 +102,7 @@ namespace allhlepidrash
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(639, 260);
+            this.button1.Location = new System.Drawing.Point(639, 351);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 46);
             this.button1.TabIndex = 4;
@@ -108,18 +114,19 @@ namespace allhlepidrash
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Snow;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(265, 159);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(203, 105);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 25);
+            this.label3.Size = new System.Drawing.Size(84, 32);
             this.label3.TabIndex = 5;
             this.label3.Text = "13033";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(828, 147);
+            this.pictureBox2.Location = new System.Drawing.Point(836, 149);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(151, 89);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -131,17 +138,19 @@ namespace allhlepidrash
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(828, 105);
+            this.label4.Location = new System.Drawing.Point(863, 113);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 15);
             this.label4.TabIndex = 7;
             this.label4.Text = "Επέλεξε μέρος";
             this.label4.Visible = false;
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pictureBox3
             // 
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(715, 196);
+            this.pictureBox3.Location = new System.Drawing.Point(709, 188);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(26, 23);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -153,7 +162,7 @@ namespace allhlepidrash
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(828, 105);
+            this.label5.Location = new System.Drawing.Point(836, 74);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(159, 21);
             this.label5.TabIndex = 9;
@@ -190,7 +199,7 @@ namespace allhlepidrash
             // 
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(123, 9);
+            this.pictureBox6.Location = new System.Drawing.Point(12, 9);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(68, 54);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -202,7 +211,7 @@ namespace allhlepidrash
             // 
             this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(12, 9);
+            this.pictureBox9.Location = new System.Drawing.Point(100, 9);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(70, 54);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -210,12 +219,65 @@ namespace allhlepidrash
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
+            // richTextBox2
+            // 
+            this.richTextBox2.Location = new System.Drawing.Point(509, 253);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.ReadOnly = true;
+            this.richTextBox2.Size = new System.Drawing.Size(165, 84);
+            this.richTextBox2.TabIndex = 41;
+            this.richTextBox2.Text = "Θυμίζουμε την φόρμα\n\nΔουλειά στις 8 π.μ.\nΣούπερ μάρκετ στις 4 μ.μ\nΆθληση στις 6 μ" +
+    ".μ\n";
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.White;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(648, 253);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(26, 23);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 42;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.Cursor = System.Windows.Forms.Cursors.Default;
+            this.richTextBox3.Font = new System.Drawing.Font("Segoe UI", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.richTextBox3.Location = new System.Drawing.Point(172, 149);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.ReadOnly = true;
+            this.richTextBox3.Size = new System.Drawing.Size(146, 269);
+            this.richTextBox3.TabIndex = 43;
+            this.richTextBox3.Text = resources.GetString("richTextBox3.Text");
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Αυτοκίνητο",
+            "Μέσα Μαζικής Μεταφοράς",
+            "Ποδήλατο",
+            "Πόδια",
+            "Συνδυασμός"});
+            this.comboBox1.Location = new System.Drawing.Point(512, 224);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(181, 23);
+            this.comboBox1.TabIndex = 44;
+            this.comboBox1.Visible = false;
+            // 
             // smartPlaning
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
             this.ClientSize = new System.Drawing.Size(1053, 461);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.richTextBox3);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox4);
@@ -242,6 +304,7 @@ namespace allhlepidrash
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,5 +326,9 @@ namespace allhlepidrash
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
