@@ -16,6 +16,7 @@ namespace allhlepidrash
         int count=0;
 
         RichTextBox dynamicRichTextBox;
+        bool didHeOrSheClick = false;
         public smartPlaning()
         {
             InitializeComponent();
@@ -51,7 +52,17 @@ namespace allhlepidrash
         private void button1_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(richTextBox1.Text))
+            {
                 MessageBox.Show("Δεν έχετε συμπληρώσει κάτι.");
+                return;
+            }
+                
+
+            if (!richTextBox1.Text.Contains("στις"))
+            {
+                MessageBox.Show("Δεν αναγνωρίζουμε το σωστό φορμάτ.");
+                return;
+            }
 
 
             // to parakatw snippet pairnei ta merh pou exeis valei kai ta spaei mexri na sylle3ei 
@@ -63,7 +74,7 @@ namespace allhlepidrash
                 // τσεκαρει αν εχει βαλει πανω απο τρία.
                 if (temp.Length>3)
                 {
-                    MessageBox.Show("Το μάξιμουμ που μπορούμε να υποστηρίξουμε είναι 3 μέρη στο πλάνο");
+                    MessageBox.Show("Το μάξιμουμ που μπορούμε να υποστηρίξουμε μέχρι στιγμής είναι 3 μέρη στο πλάνο");
                     return;
                 }
 
@@ -105,12 +116,18 @@ namespace allhlepidrash
                 button1.Text = "Αποστολή";
                 // ama einai mono ena meros pros8ese gia na paei sto proteleftaio vhma
                 if (places.Count==1)
-                {
                     count +=4;
-                }
             }
             else if (count == 3)
             {
+                // ama den exei epile3ei topo8esia gyrna sthn arxh
+                if (!didHeOrSheClick)
+                {
+                    MessageBox.Show("Δεν επέλεξες τοποθεσία.");
+                    count = 2;
+                    return;
+                }
+                didHeOrSheClick = false;
                 comboBox1.Visible = true;
                 dynamicRichTextBox.Text = "Πώς θα γίνει η μετάβαση για " + places[1] + " ;";
                 button1.Text = "Επόμενο";
@@ -125,13 +142,20 @@ namespace allhlepidrash
                 dynamicRichTextBox.Text = "Επέλεξε τοποθεσία. Έχουμε σημειώσει στον χάρτη τα κοντινότερα σημεία.";
                 pictureBox3.Visible = true;
                 button1.Text = "Αποστολή";
+                //// ama einai mono dyo merh pros8ese gia na paei sto proteleftaio vhma
                 if (places.Count == 2)
-                {
                     count += 2;
-                }
             }
             else if (count==5)
             {
+                // ama den exei epile3ei topo8esia gyrna sthn arxh
+                if (!didHeOrSheClick)
+                {
+                    MessageBox.Show("Δεν επέλεξες τοποθεσία.");
+                    count = 4;
+                    return;
+                }
+                didHeOrSheClick = false;
                 comboBox1.Visible = true;
                 dynamicRichTextBox.Text = "Πώς θέλετε να πάτε για " + places[2] + " ;";
                 button1.Text = "Επόμενο";
@@ -149,6 +173,13 @@ namespace allhlepidrash
             }
             else if (count == 7)
             {
+                // ama den exei epile3ei topo8esia gyrna sthn arxh
+                if (!didHeOrSheClick)
+                {
+                    MessageBox.Show("Δεν επέλεξες τοποθεσία.");
+                    count = 6;
+                    return;
+                }
                 dynamicRichTextBox.Text = "Αυτός είναι ο πιο γρήγορος δρόμος για να εκτελέσετε τα παραπάνω.";
                 pictureBox2.Visible = false;
                 pictureBox3.Visible = true;
@@ -270,6 +301,9 @@ namespace allhlepidrash
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            // metavlhth gia na dei an klikarei.
+            didHeOrSheClick = true;
+
             paintInBackColor();
             pictureBox2.Visible = false;
             label4.Visible = false;
@@ -308,6 +342,11 @@ namespace allhlepidrash
 
         private void pictureBox8_MouseClick(object sender, MouseEventArgs e)
         {
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

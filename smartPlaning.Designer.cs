@@ -78,7 +78,8 @@ namespace allhlepidrash
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(251, 268);
             this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "Δουλειά στις 8π.μ,\nΣούπερ Μάρκετ στις 4μ.μ.\nάθληση  στις 6 μ.μ.\n";
+            this.richTextBox1.Text = "Δουλειά στις 8π.μ,\nΣούπερ Μάρκετ στις 4μ.μ.\nΆθληση  στις 6 μ.μ.\n";
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // label1
             // 

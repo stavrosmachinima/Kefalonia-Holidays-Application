@@ -159,11 +159,13 @@ namespace allhlepidrash
             // 
             // textBox1
             // 
+            this.textBox1.HideSelection = false;
             this.textBox1.Location = new System.Drawing.Point(256, 96);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(119, 23);
-            this.textBox1.TabIndex = 7;
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TabStop = false;
             this.textBox1.Text = "0";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -185,6 +187,7 @@ namespace allhlepidrash
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(117, 23);
             this.textBox2.TabIndex = 9;
+            this.textBox2.TabStop = false;
             this.textBox2.Text = "0";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -196,6 +199,7 @@ namespace allhlepidrash
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(117, 23);
             this.textBox3.TabIndex = 10;
+            this.textBox3.TabStop = false;
             this.textBox3.Text = "0";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -248,7 +252,7 @@ namespace allhlepidrash
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(535, 357);
+            this.pictureBox6.Location = new System.Drawing.Point(503, 337);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(105, 84);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -350,6 +354,7 @@ namespace allhlepidrash
             this.textBox4.ReadOnly = true;
             this.textBox4.Size = new System.Drawing.Size(119, 23);
             this.textBox4.TabIndex = 23;
+            this.textBox4.TabStop = false;
             this.textBox4.Text = "0";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -408,6 +413,7 @@ namespace allhlepidrash
             this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(117, 23);
             this.textBox5.TabIndex = 25;
+            this.textBox5.TabStop = false;
             this.textBox5.Text = "0";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
@@ -417,7 +423,7 @@ namespace allhlepidrash
             // 
             this.pictureBox17.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
-            this.pictureBox17.Location = new System.Drawing.Point(769, 394);
+            this.pictureBox17.Location = new System.Drawing.Point(767, 394);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(49, 27);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -429,7 +435,7 @@ namespace allhlepidrash
             // 
             this.pictureBox18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(708, 394);
+            this.pictureBox18.Location = new System.Drawing.Point(697, 394);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(49, 27);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -444,6 +450,7 @@ namespace allhlepidrash
             this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(117, 23);
             this.textBox6.TabIndex = 30;
+            this.textBox6.TabStop = false;
             this.textBox6.Text = "0";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -534,6 +541,7 @@ namespace allhlepidrash
             // textBox10
             // 
             this.textBox10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox10.HideSelection = false;
             this.textBox10.Location = new System.Drawing.Point(177, 345);
             this.textBox10.Name = "textBox10";
             this.textBox10.PlaceholderText = "George Papadopoulos";
