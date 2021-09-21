@@ -32,6 +32,7 @@ namespace allhlepidrash
                 pictureBox5.Visible = false;
                 pictureBox4.Visible = true;
             }
+
         }
 
         private void smartPlaning_Paint(object sender, PaintEventArgs e)
@@ -57,11 +58,18 @@ namespace allhlepidrash
                 MessageBox.Show(kappa);
             }*/
 
+            if (comboBox1.Visible==true&&comboBox1.SelectedIndex.ToString() == "-1")
+            {
+                MessageBox.Show("Πρέπει να διαλέξεις μεταφορικό μέσο");
+                return;
+            }
+
             pictureBox7.Visible = false;
             richTextBox2.Visible = false;
             count++;
             if (count == 1)
             {
+                button1.Location = new Point(639, 313);
                 comboBox1.Visible = true;
                 createDynamicRichTextBox();
                 richTextBox1.Hide();
@@ -69,16 +77,11 @@ namespace allhlepidrash
                 button1.Text = "Επόμενο";
             }
             else if (count == 2)
-            {
+            {                
                 comboBox1.Visible = false;
-                dynamicRichTextBox.Text = "Επέλεξε τοποθεσία.\n";
-                pictureBox2.Visible = true;
+                dynamicRichTextBox.Text = "Επέλεξε τοποθεσία. Έχουμε σημειώσει στον χάρτη τα κοντινότερα σημεία.";
                 pictureBox3.Visible = true;
-                label4.Visible = true;
-                System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(System.Drawing.Color.White);
-                showDynamicCloud(myBrush);
                 button1.Text = "Αποστολή";
-                myBrush.Dispose();
             }
             else if (count == 3)
             {
@@ -88,21 +91,14 @@ namespace allhlepidrash
                 pictureBox2.Visible = false;
                 pictureBox3.Visible = false;
                 label4.Visible = false;
-                System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(BackColor);
-                showDynamicCloud(myBrush);
-                myBrush.Dispose();
+                paintInBackColor();
             }
             else if (count == 4)
             {
                 comboBox1.Visible = false;
-                dynamicRichTextBox.Text = "Επέλεξε τοποθεσία";
-                pictureBox2.Visible = true;
+                dynamicRichTextBox.Text = "Επέλεξε τοποθεσία. Έχουμε σημειώσει στον χάρτη τα κοντινότερα σημεία.";
                 pictureBox3.Visible = true;
-                label4.Visible = true;
-                System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(System.Drawing.Color.White);
-                showDynamicCloud(myBrush);
                 button1.Text = "Αποστολή";
-                myBrush.Dispose();
             }
             else if (count==5)
             {
@@ -112,33 +108,24 @@ namespace allhlepidrash
                 pictureBox2.Visible = false;
                 pictureBox3.Visible = false;
                 label4.Visible = false;
-                System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(BackColor);
-                showDynamicCloud(myBrush);
-                myBrush.Dispose();
+                paintInBackColor();
             }
             else if (count == 6)
             {
                 comboBox1.Visible = false;
-                dynamicRichTextBox.Text = "Επέλεξε τοποθεσία.\n";
-                pictureBox2.Visible = true;
+                dynamicRichTextBox.Text = "Επέλεξε τοποθεσία. Έχουμε σημειώσει στον χάρτη τα κοντινότερα σημεία.";
                 pictureBox3.Visible = true;
-                label4.Visible = true;
-                System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(System.Drawing.Color.White);
-                showDynamicCloud(myBrush);
                 button1.Text = "Αποστολή";
-                myBrush.Dispose();
             }
             else if (count == 7)
             {
                 dynamicRichTextBox.Text = "Αυτός είναι ο πιο γρήγορος δρόμος για να εκτελέσετε τα παραπάνω.";
-                pictureBox2.Visible = true;
+                pictureBox2.Visible = false;
                 pictureBox3.Visible = true;
-                label5.Visible = true;
+                label5.Visible = false;
                 label4.Visible = false;
-                System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(System.Drawing.Color.White);
-                showDynamicCloud(myBrush);
+                paintInBackColor();
                 button1.Text = "Επόμενο";
-                myBrush.Dispose();
             }
             else
             {
@@ -146,11 +133,8 @@ namespace allhlepidrash
                 button1.Visible = false;
                 pictureBox2.Visible = false;
                 pictureBox3.Visible = false;
-                label4.Visible = false;
                 label5.Visible = false;
-                System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(BackColor);
-                showDynamicCloud(myBrush);
-                myBrush.Dispose();
+                paintInBackColor();
             }
         }
 
@@ -159,8 +143,8 @@ namespace allhlepidrash
             dynamicRichTextBox = new RichTextBox();
             dynamicRichTextBox.Location = new Point(509, 129);
             dynamicRichTextBox.ReadOnly = true;
-            dynamicRichTextBox.Width = 232;
-            dynamicRichTextBox.Height = 180;
+            dynamicRichTextBox.Width = 251;
+            dynamicRichTextBox.Height = 230;
             dynamicRichTextBox.Text = "Πώς θα γίνει η μετάβαση στη Δουλειά;";
             dynamicRichTextBox.Name = "DynamicRichTextBox";
             dynamicRichTextBox.Font = new Font("Segoe UI", 12);
@@ -196,8 +180,8 @@ namespace allhlepidrash
         {
             System.Drawing.Graphics formGraphics;
             formGraphics = this.CreateGraphics();
-            formGraphics.FillEllipse(myBrush, new Rectangle(748, 186, 20, 20));
-            formGraphics.FillEllipse(myBrush, new Rectangle(785, 180, 30, 30));
+            formGraphics.FillEllipse(myBrush, new Rectangle(767, 217, 20, 20));
+            formGraphics.FillEllipse(myBrush, new Rectangle(795, 210, 30, 30));
             myBrush.Dispose();
             formGraphics.Dispose();
         }
@@ -230,6 +214,58 @@ namespace allhlepidrash
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            label4.Visible = true;
+            if (count==7)
+            {
+                label4.Visible = false;
+                label5.Visible = true;
+            }
+            pictureBox2.Visible = true;
+            System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(System.Drawing.Color.White);
+            showDynamicCloud(myBrush);
+            myBrush.Dispose();
+
+            /*
+            pen = new Pen(Color.Black, 3);
+            graphics = pictureBox2.CreateGraphics();
+            graphics.DrawEllipse(pen, 849, 158, 20, 20);
+            graphics.DrawEllipse(pen, 116, 35, 20, 20);
+            graphics.DrawEllipse(pen, 65, 65, 20, 20);
+            */
+            pictureBox2.Invalidate();
+        }
+
+        private void paintInBackColor()
+        {
+            System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(BackColor);
+            showDynamicCloud(myBrush);
+            myBrush.Dispose();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            paintInBackColor();
+            pictureBox2.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+        }
+
+        private void pictureBox2_MouseClick(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show(e.X.ToString() + "," + e.Y.ToString());
+        }
+
+        private void pictureBox2_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics gf = e.Graphics;
+            Pen pen = new Pen(Color.Black, 3);
+            gf.DrawEllipse(pen, 23, 13, 20, 20);
+            gf.DrawEllipse(pen, 116, 35, 20, 20);
+            gf.DrawEllipse(pen, 65, 65, 20, 20);
         }
     }
 }
