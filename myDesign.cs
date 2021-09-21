@@ -41,24 +41,19 @@ namespace allhlepidrash
             {
                 if (IconKitchenOn.Visible == true)
                 {
-                    onlyLivingRoom = true;
-                    onlyKitchen = false;
-                    LivingRoomOff.Visible = false;
-                    LivingRoomOn.Visible = false;
                     kitchenOn.Visible = true;
                     kitchenOff.Visible = false;
-                    button4.Visible = true;
                 }
                 else if (IconKitchenOff.Visible==true)
                 {
-                    onlyLivingRoom = true;
-                    onlyKitchen = false;
-                    LivingRoomOff.Visible = false;
-                    LivingRoomOn.Visible = false;
                     kitchenOff.Visible = true;
                     kitchenOn.Visible = false;
-                    button4.Visible = true;
                 }
+                onlyLivingRoom = true;
+                onlyKitchen = false;
+                LivingRoomOff.Visible = false;
+                LivingRoomOn.Visible = false;
+                button4.Visible = true;
                 temperature.Text =temperatureKitchen;
                 temperature.Visible = true;
                 increase.Visible = true;
@@ -95,30 +90,24 @@ namespace allhlepidrash
             {
                 if (IconLivingRoomOn.Visible == true)
                 {
-                    onlyLivingRoom = false;
-                    onlyKitchen = true;
-                    kitchenOff.Visible = false;
-                    kitchenOn.Visible = false;
                     LivingRoomOff.Visible = false;
                     LivingRoomOn.Visible = true;
-                    button4.Visible = true;
-
                 }
                 else if(IconLivingRoomOff.Visible==true)
                 {
-                    onlyLivingRoom = false;
-                    onlyKitchen = true;
-                    kitchenOff.Visible = false;
-                    kitchenOn.Visible = false;
                     LivingRoomOn.Visible = false;
                     LivingRoomOff.Visible = true;
-                    button4.Visible = true;
                 }
                 temperature.Text = temperatureLivingRoom;
                 temperature.Visible = true;
                 increase.Visible = true;
                 decrease.Visible = true;
                 label3.Visible = true;
+                onlyLivingRoom = false;
+                onlyKitchen = true;
+                kitchenOff.Visible = false;
+                kitchenOn.Visible = false;
+                button4.Visible = true;
             }
         }
 
@@ -156,7 +145,6 @@ namespace allhlepidrash
                 kitchenOn.Visible = false;
                 LivingRoomOff.Visible = false;
                 LivingRoomOn.Visible = true;
-
             }
         }
 
@@ -183,6 +171,7 @@ namespace allhlepidrash
             }
         }
 
+        // afto einai to increase
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             String s1 = temperature.Text;
@@ -234,6 +223,11 @@ namespace allhlepidrash
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this, @"..\..\..\bestHelpInTown.chm");
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
