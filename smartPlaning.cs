@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,14 +50,33 @@ namespace allhlepidrash
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String[] temp = richTextBox1.Text.Trim().Split("\n");
-            /*
-            String[temp.Length] array;
-            foreach (String kappa in temp)
+            if (string.IsNullOrWhiteSpace(richTextBox1.Text))
+                MessageBox.Show("Δεν έχετε συμπληρώσει κάτι.");
+
+
+            // to parakatw snippet pairnei ta merh pou exeis valei kai ta spaei mexri na sylle3ei 
+            // to katallhlo string pou einai to meros pou 8elei na paei o xrhsths.
+            List<string> places = new List<string>();
+            try
             {
-                String[] array[0]=kappa.Split(" ")[0];
-                MessageBox.Show(kappa);
-            }*/
+                String[] temp = richTextBox1.Text.Trim().Split("\n");
+                // τσεκαρει αν εχει βαλει πανω απο τρία.
+                if (temp.Length>3)
+                {
+                    MessageBox.Show("Το μάξιμουμ που μπορούμε να υποστηρίξουμε είναι 3 μέρη στο πλάνο");
+                    return;
+                }
+
+                foreach (String placeHour in temp)
+                {
+                    String[] temp2=placeHour.Split("στις");
+                    places.Add(temp2[0]);
+                }
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
             if (comboBox1.Visible==true&&comboBox1.SelectedIndex.ToString() == "-1")
             {
@@ -72,6 +92,7 @@ namespace allhlepidrash
                 button1.Location = new Point(639, 313);
                 comboBox1.Visible = true;
                 createDynamicRichTextBox();
+                dynamicRichTextBox.Text = "Πώς θα γίνει η μετάβαση για "+places[0]+" ;";
                 richTextBox1.Hide();
                 Controls.Add(dynamicRichTextBox);
                 button1.Text = "Επόμενο";
@@ -82,11 +103,16 @@ namespace allhlepidrash
                 dynamicRichTextBox.Text = "Επέλεξε τοποθεσία. Έχουμε σημειώσει στον χάρτη τα κοντινότερα σημεία.";
                 pictureBox3.Visible = true;
                 button1.Text = "Αποστολή";
+                // ama einai mono ena meros pros8ese gia na paei sto proteleftaio vhma
+                if (places.Count==1)
+                {
+                    count +=4;
+                }
             }
             else if (count == 3)
             {
                 comboBox1.Visible = true;
-                dynamicRichTextBox.Text = "Πώς θέλετε να πάτε στο Super;";
+                dynamicRichTextBox.Text = "Πώς θα γίνει η μετάβαση για " + places[1] + " ;";
                 button1.Text = "Επόμενο";
                 pictureBox2.Visible = false;
                 pictureBox3.Visible = false;
@@ -99,11 +125,15 @@ namespace allhlepidrash
                 dynamicRichTextBox.Text = "Επέλεξε τοποθεσία. Έχουμε σημειώσει στον χάρτη τα κοντινότερα σημεία.";
                 pictureBox3.Visible = true;
                 button1.Text = "Αποστολή";
+                if (places.Count == 2)
+                {
+                    count += 2;
+                }
             }
             else if (count==5)
             {
                 comboBox1.Visible = true;
-                dynamicRichTextBox.Text = "Πώς θέλετε να πάτε για άθληση;";
+                dynamicRichTextBox.Text = "Πώς θέλετε να πάτε για " + places[2] + " ;";
                 button1.Text = "Επόμενο";
                 pictureBox2.Visible = false;
                 pictureBox3.Visible = false;
@@ -145,7 +175,6 @@ namespace allhlepidrash
             dynamicRichTextBox.ReadOnly = true;
             dynamicRichTextBox.Width = 251;
             dynamicRichTextBox.Height = 230;
-            dynamicRichTextBox.Text = "Πώς θα γίνει η μετάβαση στη Δουλειά;";
             dynamicRichTextBox.Name = "DynamicRichTextBox";
             dynamicRichTextBox.Font = new Font("Segoe UI", 12);
         }
@@ -219,24 +248,17 @@ namespace allhlepidrash
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             label4.Visible = true;
-            if (count==7)
-            {
-                label4.Visible = false;
-                label5.Visible = true;
-            }
-            pictureBox2.Visible = true;
             System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(System.Drawing.Color.White);
             showDynamicCloud(myBrush);
             myBrush.Dispose();
-
-            /*
-            pen = new Pen(Color.Black, 3);
-            graphics = pictureBox2.CreateGraphics();
-            graphics.DrawEllipse(pen, 849, 158, 20, 20);
-            graphics.DrawEllipse(pen, 116, 35, 20, 20);
-            graphics.DrawEllipse(pen, 65, 65, 20, 20);
-            */
-            pictureBox2.Invalidate();
+            if (count==7)
+            {
+                pictureBox8.Visible = true;
+                label4.Visible = false;
+                label5.Visible = true;
+                return;
+            }
+            pictureBox2.Visible = true;
         }
 
         private void paintInBackColor()
@@ -256,7 +278,6 @@ namespace allhlepidrash
 
         private void pictureBox2_MouseClick(object sender, MouseEventArgs e)
         {
-            MessageBox.Show(e.X.ToString() + "," + e.Y.ToString());
         }
 
         private void pictureBox2_Paint(object sender, PaintEventArgs e)
@@ -266,6 +287,27 @@ namespace allhlepidrash
             gf.DrawEllipse(pen, 23, 13, 20, 20);
             gf.DrawEllipse(pen, 116, 35, 20, 20);
             gf.DrawEllipse(pen, 65, 65, 20, 20);
+        }
+
+        private void pictureBox8_Paint(object sender, PaintEventArgs e)
+        {
+
+            Graphics gf = e.Graphics;
+            Pen pen = new Pen(Color.Black, 3);
+            GraphicsPath capPath = new GraphicsPath();
+            gf.DrawLine(pen, 62, 73, 122, 59);
+            gf.DrawLine(pen, 122, 59, 126, 0);
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            pictureBox8.Visible = false;
+            paintInBackColor();
+            label5.Visible = false;
+        }
+
+        private void pictureBox8_MouseClick(object sender, MouseEventArgs e)
+        {
         }
     }
 }

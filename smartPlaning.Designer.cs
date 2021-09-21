@@ -48,6 +48,7 @@ namespace allhlepidrash
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -56,6 +57,7 @@ namespace allhlepidrash
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -231,6 +233,7 @@ namespace allhlepidrash
             this.richTextBox2.Location = new System.Drawing.Point(509, 253);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.ReadOnly = true;
+            this.richTextBox2.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.richTextBox2.Size = new System.Drawing.Size(165, 84);
             this.richTextBox2.TabIndex = 41;
             this.richTextBox2.Text = "Θυμίζουμε την φόρμα\n\nΔουλειά στις 8 π.μ.\nΣούπερ μάρκετ στις 4 μ.μ\nΆθληση στις 6 μ" +
@@ -277,12 +280,28 @@ namespace allhlepidrash
             this.comboBox1.TabIndex = 44;
             this.comboBox1.Visible = false;
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(849, 158);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(151, 89);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 45;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.Visible = false;
+            this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
+            this.pictureBox8.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox8_Paint);
+            this.pictureBox8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox8_MouseClick);
+            // 
             // smartPlaning
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
             this.ClientSize = new System.Drawing.Size(1037, 461);
+            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.richTextBox3);
             this.Controls.Add(this.pictureBox7);
@@ -314,6 +333,7 @@ namespace allhlepidrash
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -339,5 +359,6 @@ namespace allhlepidrash
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.PictureBox pictureBox8;
     }
 }
