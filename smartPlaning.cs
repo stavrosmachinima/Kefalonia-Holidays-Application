@@ -58,6 +58,7 @@ namespace allhlepidrash
             }*/
 
             pictureBox7.Visible = false;
+            richTextBox2.Visible = false;
             count++;
             if (count == 1)
             {
