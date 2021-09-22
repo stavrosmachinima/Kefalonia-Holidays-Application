@@ -113,6 +113,16 @@ namespace allhlepidrash.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap delivery {
+            get {
+                object obj = ResourceManager.GetObject("delivery", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap diningRoomOff {
             get {
                 object obj = ResourceManager.GetObject("diningRoomOff", resourceCulture);
@@ -216,6 +226,26 @@ namespace allhlepidrash.Properties {
         internal static System.Drawing.Bitmap parentsRoomOn {
             get {
                 object obj = ResourceManager.GetObject("parentsRoomOn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap safeDelivery {
+            get {
+                object obj = ResourceManager.GetObject("safeDelivery", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap welcomeTokTok {
+            get {
+                object obj = ResourceManager.GetObject("welcomeTokTok", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

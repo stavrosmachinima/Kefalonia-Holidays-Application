@@ -29,6 +29,7 @@ namespace allhlepidrash
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(myDesign));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,6 +56,9 @@ namespace allhlepidrash
             this.iconBathroom = new System.Windows.Forms.PictureBox();
             this.iconLiving = new System.Windows.Forms.PictureBox();
             this.iconKitchen = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureRoom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.increase)).BeginInit();
@@ -369,12 +373,45 @@ namespace allhlepidrash
             this.iconKitchen.TabStop = false;
             this.iconKitchen.Click += new System.EventHandler(this.iconKitchen_Click);
             // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(889, 437);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(99, 37);
+            this.button1.TabIndex = 46;
+            this.button1.Text = "Slideshow";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // button2
+            // 
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(765, 437);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(99, 37);
+            this.button2.TabIndex = 47;
+            this.button2.Text = "Normal";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
             // myDesign
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aquamarine;
             this.ClientSize = new System.Drawing.Size(1000, 486);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.iconKitchen);
             this.Controls.Add(this.iconLiving);
             this.Controls.Add(this.iconBathroom);
@@ -450,5 +487,8 @@ namespace allhlepidrash
         private System.Windows.Forms.PictureBox iconBathroom;
         private System.Windows.Forms.PictureBox iconLiving;
         private System.Windows.Forms.PictureBox iconKitchen;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button button2;
     }
 }

@@ -73,14 +73,13 @@ namespace allhlepidrash
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pictureBox22 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -104,6 +103,7 @@ namespace allhlepidrash
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -112,9 +112,9 @@ namespace allhlepidrash
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(382, -4);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(246, 32);
+            this.label1.Size = new System.Drawing.Size(244, 32);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Safe Online Delivery";
+            this.label1.Text = "Welcome to Tok Tok";
             // 
             // pictureBox2
             // 
@@ -125,6 +125,7 @@ namespace allhlepidrash
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label2
@@ -136,6 +137,7 @@ namespace allhlepidrash
             this.label2.Size = new System.Drawing.Size(182, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "Choose your Potion!";
+            this.label2.Visible = false;
             // 
             // pictureBox1
             // 
@@ -146,6 +148,7 @@ namespace allhlepidrash
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Visible = false;
             // 
             // pictureBox3
             // 
@@ -156,6 +159,7 @@ namespace allhlepidrash
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 6;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
             // 
             // textBox1
             // 
@@ -168,6 +172,7 @@ namespace allhlepidrash
             this.textBox1.TabStop = false;
             this.textBox1.Text = "0";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.Visible = false;
             // 
             // label3
             // 
@@ -178,6 +183,7 @@ namespace allhlepidrash
             this.label3.Size = new System.Drawing.Size(70, 21);
             this.label3.TabIndex = 8;
             this.label3.Text = "Quantity";
+            this.label3.Visible = false;
             // 
             // textBox2
             // 
@@ -190,6 +196,7 @@ namespace allhlepidrash
             this.textBox2.TabStop = false;
             this.textBox2.Text = "0";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox2.Visible = false;
             // 
             // textBox3
             // 
@@ -202,6 +209,7 @@ namespace allhlepidrash
             this.textBox3.TabStop = false;
             this.textBox3.Text = "0";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox3.Visible = false;
             // 
             // button1
             // 
@@ -225,6 +233,7 @@ namespace allhlepidrash
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 12;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Visible = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox5
@@ -237,6 +246,7 @@ namespace allhlepidrash
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 13;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Visible = false;
             this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // label4
@@ -248,6 +258,7 @@ namespace allhlepidrash
             this.label4.Size = new System.Drawing.Size(64, 21);
             this.label4.TabIndex = 14;
             this.label4.Text = "Product";
+            this.label4.Visible = false;
             // 
             // pictureBox6
             // 
@@ -258,6 +269,7 @@ namespace allhlepidrash
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 15;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Visible = false;
             // 
             // pictureBox7
             // 
@@ -269,6 +281,7 @@ namespace allhlepidrash
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 16;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Visible = false;
             this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox8
@@ -281,6 +294,7 @@ namespace allhlepidrash
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 17;
             this.pictureBox8.TabStop = false;
+            this.pictureBox8.Visible = false;
             this.pictureBox8.Click += new System.EventHandler(this.pictureBox8_Click);
             // 
             // pictureBox9
@@ -293,6 +307,7 @@ namespace allhlepidrash
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 18;
             this.pictureBox9.TabStop = false;
+            this.pictureBox9.Visible = false;
             this.pictureBox9.Click += new System.EventHandler(this.pictureBox9_Click);
             // 
             // pictureBox10
@@ -305,6 +320,7 @@ namespace allhlepidrash
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox10.TabIndex = 19;
             this.pictureBox10.TabStop = false;
+            this.pictureBox10.Visible = false;
             this.pictureBox10.Click += new System.EventHandler(this.pictureBox10_Click);
             // 
             // pictureBox11
@@ -326,6 +342,7 @@ namespace allhlepidrash
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox12.TabIndex = 21;
             this.pictureBox12.TabStop = false;
+            this.pictureBox12.Visible = false;
             // 
             // label5
             // 
@@ -336,6 +353,7 @@ namespace allhlepidrash
             this.label5.Size = new System.Drawing.Size(64, 21);
             this.label5.TabIndex = 22;
             this.label5.Text = "Product";
+            this.label5.Visible = false;
             // 
             // label6
             // 
@@ -346,6 +364,7 @@ namespace allhlepidrash
             this.label6.Size = new System.Drawing.Size(70, 21);
             this.label6.TabIndex = 24;
             this.label6.Text = "Quantity";
+            this.label6.Visible = false;
             // 
             // textBox4
             // 
@@ -357,6 +376,7 @@ namespace allhlepidrash
             this.textBox4.TabStop = false;
             this.textBox4.Text = "0";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox4.Visible = false;
             // 
             // pictureBox13
             // 
@@ -368,6 +388,7 @@ namespace allhlepidrash
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 29;
             this.pictureBox13.TabStop = false;
+            this.pictureBox13.Visible = false;
             this.pictureBox13.Click += new System.EventHandler(this.pictureBox13_Click);
             // 
             // pictureBox14
@@ -380,6 +401,7 @@ namespace allhlepidrash
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox14.TabIndex = 28;
             this.pictureBox14.TabStop = false;
+            this.pictureBox14.Visible = false;
             this.pictureBox14.Click += new System.EventHandler(this.pictureBox14_Click);
             // 
             // pictureBox15
@@ -392,6 +414,7 @@ namespace allhlepidrash
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 27;
             this.pictureBox15.TabStop = false;
+            this.pictureBox15.Visible = false;
             this.pictureBox15.Click += new System.EventHandler(this.pictureBox15_Click);
             // 
             // pictureBox16
@@ -404,6 +427,7 @@ namespace allhlepidrash
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox16.TabIndex = 26;
             this.pictureBox16.TabStop = false;
+            this.pictureBox16.Visible = false;
             this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
             // 
             // textBox5
@@ -416,6 +440,7 @@ namespace allhlepidrash
             this.textBox5.TabStop = false;
             this.textBox5.Text = "0";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox5.Visible = false;
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             this.textBox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox5_KeyPress);
             // 
@@ -429,6 +454,7 @@ namespace allhlepidrash
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox17.TabIndex = 32;
             this.pictureBox17.TabStop = false;
+            this.pictureBox17.Visible = false;
             this.pictureBox17.Click += new System.EventHandler(this.pictureBox17_Click);
             // 
             // pictureBox18
@@ -441,6 +467,7 @@ namespace allhlepidrash
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox18.TabIndex = 31;
             this.pictureBox18.TabStop = false;
+            this.pictureBox18.Visible = false;
             this.pictureBox18.Click += new System.EventHandler(this.pictureBox18_Click);
             // 
             // textBox6
@@ -453,6 +480,7 @@ namespace allhlepidrash
             this.textBox6.TabStop = false;
             this.textBox6.Text = "0";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox6.Visible = false;
             // 
             // textBox7
             // 
@@ -482,7 +510,7 @@ namespace allhlepidrash
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(183, 162);
+            this.label8.Location = new System.Drawing.Point(177, 162);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(102, 21);
             this.label8.TabIndex = 35;
@@ -492,7 +520,7 @@ namespace allhlepidrash
             // textBox8
             // 
             this.textBox8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox8.Location = new System.Drawing.Point(183, 215);
+            this.textBox8.Location = new System.Drawing.Point(177, 215);
             this.textBox8.MaxLength = 19;
             this.textBox8.Name = "textBox8";
             this.textBox8.PlaceholderText = "4564 9875 1285 1287";
@@ -555,7 +583,7 @@ namespace allhlepidrash
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(623, 291);
+            this.label11.Location = new System.Drawing.Point(614, 291);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(113, 21);
             this.label11.TabIndex = 41;
@@ -600,40 +628,15 @@ namespace allhlepidrash
             this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
             this.textBox12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox12_KeyPress);
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(432, 28);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(114, 25);
-            this.label13.TabIndex = 45;
-            this.label13.Text = "Card Details";
-            this.label13.Visible = false;
-            // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(854, 404);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(110, 34);
-            this.button2.TabIndex = 46;
-            this.button2.Text = "Submit";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // pictureBox19
             // 
-            this.pictureBox19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox19.Image")));
-            this.pictureBox19.Location = new System.Drawing.Point(256, 127);
+            this.pictureBox19.Image = global::allhlepidrash.Properties.Resources.welcomeTokTok;
+            this.pictureBox19.Location = new System.Drawing.Point(226, 70);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(445, 261);
+            this.pictureBox19.Size = new System.Drawing.Size(542, 333);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox19.TabIndex = 47;
             this.pictureBox19.TabStop = false;
-            this.pictureBox19.Visible = false;
             // 
             // label14
             // 
@@ -696,20 +699,29 @@ namespace allhlepidrash
             this.pictureBox23.TabStop = false;
             this.pictureBox23.Click += new System.EventHandler(this.pictureBox23_Click);
             // 
+            // pictureBox24
+            // 
+            this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
+            this.pictureBox24.Location = new System.Drawing.Point(56, 393);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(111, 86);
+            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox24.TabIndex = 53;
+            this.pictureBox24.TabStop = false;
+            // 
             // onlineDelivery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(976, 491);
+            this.Controls.Add(this.pictureBox24);
             this.Controls.Add(this.pictureBox23);
             this.Controls.Add(this.pictureBox22);
             this.Controls.Add(this.pictureBox21);
             this.Controls.Add(this.pictureBox20);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.pictureBox19);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.textBox12);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox11);
@@ -780,6 +792,7 @@ namespace allhlepidrash
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -829,13 +842,12 @@ namespace allhlepidrash
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox19;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.PictureBox pictureBox21;
         private System.Windows.Forms.PictureBox pictureBox22;
         private System.Windows.Forms.PictureBox pictureBox23;
+        private System.Windows.Forms.PictureBox pictureBox24;
     }
 }

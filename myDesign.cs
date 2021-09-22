@@ -96,7 +96,7 @@ namespace allhlepidrash
                 }
                 else
                 {
-                    lightKitchen = true;
+                    lightDiningRoom = true;
                     pictureRoom.Image = Properties.Resources.diningRoomOn;
                     iconDining.Image = Properties.Resources.lightOn;
                 }
@@ -416,6 +416,66 @@ namespace allhlepidrash
             decrease.Visible = true;
             temperature.Visible = true;
             pictureRoom.Visible = true;
+            button1.Visible = true;
+            button2.Visible = true;
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            showRoom();
+            timer1.Enabled = true;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Random random=new Random();
+            int randomInteger=random.Next(1, 6);
+            switch (randomInteger)
+            {
+                case 1:
+                    if (lightKitchen)
+                        pictureRoom.Image = Properties.Resources.kitchenOn;
+                    else
+                        pictureRoom.Image = Properties.Resources.kitchenOff;
+                    break;
+                case 2:
+                    if (lightDiningRoom)
+                        pictureRoom.Image = Properties.Resources.diningRoomOn;
+                    else
+                        pictureRoom.Image = Properties.Resources.diningRoomOff;
+                    break;
+                case 3:
+                    if (lightLivingRoom)
+                        pictureRoom.Image = Properties.Resources.livingRoom;
+                    else
+                        pictureRoom.Image = Properties.Resources.darkenedLivingRoom;
+                    break;
+                case 4:
+                    if (lightParentsRoom)
+                        pictureRoom.Image = Properties.Resources.parentsRoomOn;
+                    else
+                        pictureRoom.Image = Properties.Resources.parentsRoomOff;
+                    break;
+                case 5:
+                    if (lightChildrenRoom)
+                        pictureRoom.Image = Properties.Resources.childrenRoomOn;
+                    else
+                        pictureRoom.Image = Properties.Resources.childrenRoomOff;
+                    break;
+                case 6:
+                    if (lightBathroom)
+                        pictureRoom.Image = Properties.Resources.bathroomOn;
+                    else
+                        pictureRoom.Image = Properties.Resources.bathroomOn;
+                    break;
+            }
+                
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
         }
     }
 }

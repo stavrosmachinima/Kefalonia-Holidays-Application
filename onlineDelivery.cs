@@ -12,6 +12,7 @@ namespace allhlepidrash
 {
     public partial class onlineDelivery : Form
     {
+        int count = 0;
         public onlineDelivery()
         {
             InitializeComponent();
@@ -149,22 +150,63 @@ namespace allhlepidrash
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int redMeats = int.Parse(textBox1.Text);
-            int lettuces = int.Parse(textBox3.Text);
-            int apples = int.Parse(textBox2.Text);
-            int yoghurt = int.Parse(textBox4.Text);
-            int milk = int.Parse(textBox5.Text);
-            int iceCream = int.Parse(textBox6.Text);
-            double total = redMeats * 2.1 + lettuces * 0.5 + apples * 0.2 + yoghurt * 3 + milk * 1.2 + iceCream * 3.4;
-            if (total > 0)
+            
+            if (count==0)
             {
+                pictureBox19.Image = Properties.Resources.delivery;
+                pictureBox19.Visible = false;
+                count++;
+                pictureBox11.Visible = true;
+                pictureBox12.Visible = true;
+                pictureBox1.Visible = true;
+                pictureBox2.Visible = true;
+                pictureBox3.Visible = true;
+                pictureBox6.Visible = true;
+                label3.Visible = true;
+                label4.Visible = true;
+                label5.Visible = true;
+                label6.Visible = true;
+                textBox1.Visible = true;
+                textBox2.Visible = true;
+                textBox3.Visible = true;
+                textBox4.Visible = true;
+                textBox5.Visible = true;
+                textBox6.Visible = true;
+                pictureBox4.Visible = true;
+                pictureBox5.Visible = true;
+                pictureBox7.Visible = true;
+                pictureBox8.Visible = true;
+                pictureBox9.Visible = true;
+                pictureBox10.Visible = true;
+                pictureBox13.Visible = true;
+                pictureBox14.Visible = true;
+                pictureBox15.Visible = true;
+                pictureBox16.Visible = true;
+                pictureBox17.Visible = true;
+                pictureBox18.Visible = true;
+                label2.Visible = true;
+            }
+            else if (count == 1)
+            {
+                label1.Text = "Safe Online Delivery";
+                int redMeats = int.Parse(textBox1.Text);
+                int lettuces = int.Parse(textBox3.Text);
+                int apples = int.Parse(textBox2.Text);
+                int yoghurt = int.Parse(textBox4.Text);
+                int milk = int.Parse(textBox5.Text);
+                int iceCream = int.Parse(textBox6.Text);
+                double total = redMeats * 2.1 + lettuces * 0.5 + apples * 0.2 + yoghurt * 3 + milk * 1.2 + iceCream * 3.4;
+                if (total <= 0)
+                {
+                    MessageBox.Show("You have to order something to move on.");
+                    return;
+                }
                 pictureBox12.Visible = false;
                 pictureBox11.Visible = false;
                 pictureBox1.Visible = false;
                 pictureBox6.Visible = false;
                 pictureBox2.Visible = false;
                 pictureBox3.Visible = false;
-                label2.Visible = false;
                 label3.Visible = false;
                 label4.Visible = false;
                 label5.Visible = false;
@@ -200,13 +242,11 @@ namespace allhlepidrash
                 label10.Visible = true;
                 label11.Visible = true;
                 label12.Visible = true;
-                label13.Visible = true;
-                button2.Visible = true;
+                label2.Text = "Card Details";
+                button1.Text = "Submit";
                 textBox7.Text = total.ToString() + " €";
+                
             }
-            else
-                MessageBox.Show("You have to order something to move on.");
-           
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -229,8 +269,8 @@ namespace allhlepidrash
                 label10.Visible = false;
                 label11.Visible = false;
                 label12.Visible = false; ;
-                label13.Visible = false;
-                button2.Visible = false;
+                label2.Visible = false;
+                button1.Visible = false;
             }
             else
             {
