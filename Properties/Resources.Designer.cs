@@ -83,6 +83,36 @@ namespace allhlepidrash.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cartIcon {
+            get {
+                object obj = ResourceManager.GetObject("cartIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cartIcon1 {
+            get {
+                object obj = ResourceManager.GetObject("cartIcon1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cartInverted {
+            get {
+                object obj = ResourceManager.GetObject("cartInverted", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap childrenRoomOff {
             get {
                 object obj = ResourceManager.GetObject("childrenRoomOff", resourceCulture);
@@ -136,6 +166,16 @@ namespace allhlepidrash.Properties {
         internal static System.Drawing.Bitmap diningRoomOn {
             get {
                 object obj = ResourceManager.GetObject("diningRoomOn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap entrance {
+            get {
+                object obj = ResourceManager.GetObject("entrance", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,6 +286,16 @@ namespace allhlepidrash.Properties {
         internal static System.Drawing.Bitmap welcomeTokTok {
             get {
                 object obj = ResourceManager.GetObject("welcomeTokTok", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap whatIsTemperature {
+            get {
+                object obj = ResourceManager.GetObject("whatIsTemperature", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

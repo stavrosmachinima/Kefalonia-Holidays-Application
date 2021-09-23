@@ -13,6 +13,7 @@ namespace allhlepidrash
     public partial class onlineDelivery : Form
     {
         int count = 0;
+        bool changeDirection=false;
         public onlineDelivery()
         {
             InitializeComponent();
@@ -42,6 +43,7 @@ namespace allhlepidrash
                 pictureBox21.Visible = false;
                 pictureBox20.Visible = true;
             }
+            timer1.Enabled = true;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -153,6 +155,8 @@ namespace allhlepidrash
             
             if (count==0)
             {
+                timer1.Enabled = false;
+                pictureBox24.Visible = false;
                 pictureBox19.Image = Properties.Resources.delivery;
                 pictureBox19.Visible = false;
                 count++;
@@ -393,6 +397,31 @@ namespace allhlepidrash
                 }
 
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            int new_x;
+            // o kwdikas animation einai edw.
+
+            if (!changeDirection)
+            {
+                pictureBox24.Image = Properties.Resources.cartIcon;
+                new_x = pictureBox24.Location.X + 1;
+                pictureBox24.Location = new Point(new_x, pictureBox24.Location.Y);
+                if (pictureBox24.Location.X >= 106)
+                    changeDirection = true;
+            }
+            else
+            {
+                pictureBox24.Image = Properties.Resources.cartInverted;
+                new_x = pictureBox24.Location.X-1;
+                pictureBox24.Location = new Point(new_x, pictureBox24.Location.Y);
+                if (pictureBox24.Location.X<= 1)
+                    changeDirection = false;
+            }
+                
+
         }
     }
 }

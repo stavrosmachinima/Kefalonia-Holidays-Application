@@ -12,6 +12,7 @@ namespace allhlepidrash
 {
     public partial class smartTemperature : Form
     {
+        bool pictureChanged = false;
         public smartTemperature()
         {
             InitializeComponent();
@@ -19,13 +20,6 @@ namespace allhlepidrash
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            pictureBox2.Visible = true;
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            pictureBox3.Visible = true;
-            label1.Visible = true;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -66,6 +60,22 @@ namespace allhlepidrash
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this, @"..\..\..\bestHelpInTown.chm");
+        }
+
+        private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if ((e.X >= 113 && e.X <= 120) && (e.Y >= 136) && e.Y <= 143)
+            {
+                pictureBox1.Image = Properties.Resources.whatIsTemperature;
+            }
+        }
+
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if ((e.X >= 113 && e.X <= 120) && (e.Y >= 136) && e.Y <= 143)
+                pictureBox1.Cursor = Cursors.Hand;
+            else
+                pictureBox1.Cursor = Cursors.Default;
         }
     }
 }
