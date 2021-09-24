@@ -73,20 +73,30 @@ namespace allhlepidrash
                 label3.Visible = true;
                 pictureBox1.Image = Properties.Resources.whatIsTemperature;
 
-                //emfanish o8onhs
-                richTextBox1.Visible = true;
-                pictureBox7.Visible = true;
-                pictureBox2.Visible = true;
-               
-
                 if (x <= 36.6)
+                {
+                    showScreen();
                     richTextBox1.Text = "Μπορείτε να περάσετε.";
+                }
+                    
                 else if (x<=37.2)
+                {
+                    showScreen();
                     richTextBox1.Text = "Ξαναδοκιμάστε σε 5'.";
-                else if (x<=38)
+                }
+                else if (x<38)
+                {
+                    showScreen();
                     richTextBox1.Text = "Έχετε δέκατα.\nΠροτείνουμε προσοχή.";
+                }
                 else
-                    richTextBox1.Text = "Προτείνουμε να κάνετε τεστ κορονοϊού.";
+                {
+                    showScreen();
+                    pictureBox3.Visible = true;
+                    pictureBox3.BringToFront();
+                    richTextBox1.Text = "Προτείνουμε να κάνετε τεστ κορονοϊού.\n\nΒρίσκουμε τα κοντινότερα διαγνωστικά κέντρα...";
+                    timer1.Enabled = true;
+                }
             }
         }
 
@@ -96,6 +106,42 @@ namespace allhlepidrash
                 pictureBox1.Cursor = Cursors.Hand;
             else
                 pictureBox1.Cursor = Cursors.Default;
+        }
+
+        private void pictureBox2_MouseClick(object sender, MouseEventArgs e)
+        {
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            int new_x = pictureBox3.Location.X - 1;
+            pictureBox3.Location = new Point(new_x, pictureBox3.Location.Y);
+            if (pictureBox3.Location.X >= 589)
+                pictureBox3.Location = new Point(new_x, pictureBox3.Location.Y);
+            else
+            {
+                richTextBox1.Visible = false;
+                pictureBox8.Visible = true;
+                pictureBox8.BringToFront();
+                timer1.Enabled = false;
+            }
+                
+        }
+
+        private void showScreen()
+        {
+            richTextBox1.Visible = true;
+            pictureBox7.Visible = true;
+            pictureBox2.Visible = true;
+        }
+
+        private void pictureBox8_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics gf = e.Graphics;
+            Pen pen = new Pen(Color.Black, 3);
+            gf.DrawEllipse(pen, 23, 13, 20, 20);
+            gf.DrawEllipse(pen, 116, 35, 20, 20);
+            gf.DrawEllipse(pen, 150, 65, 20, 20);
         }
     }
 }
