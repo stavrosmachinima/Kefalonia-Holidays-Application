@@ -12,6 +12,7 @@ namespace allhlepidrash
 {
     public partial class servicesForOldPeople : Form
     {
+        int counter = 0;
         public servicesForOldPeople()
         {
             InitializeComponent();
@@ -29,11 +30,11 @@ namespace allhlepidrash
                 pictureBox5.Visible = false;
                 pictureBox4.Visible = true;
             }
+            timer1.Enabled = true;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            pictureBox3.Visible = true;
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -60,6 +61,22 @@ namespace allhlepidrash
         private void pictureBox9_Click(object sender, EventArgs e)
         {
             Help.ShowHelp(this, @"..\..\..\bestHelpInTown.chm");
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            counter++;
+            if (counter > 15)
+                timer1.Enabled = false;
+            else if (counter > 10)
+                pictureBox3.Visible = true;
+            else if (counter>5)
+                label1.Visible = true;
         }
     }
 }
