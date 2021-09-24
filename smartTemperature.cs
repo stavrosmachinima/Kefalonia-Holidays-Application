@@ -12,7 +12,6 @@ namespace allhlepidrash
 {
     public partial class smartTemperature : Form
     {
-        bool pictureChanged = false;
         public smartTemperature()
         {
             InitializeComponent();
@@ -64,15 +63,36 @@ namespace allhlepidrash
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)
         {
-            if ((e.X >= 113 && e.X <= 120) && (e.Y >= 136) && e.Y <= 143)
+            if ((e.X >= 115 && e.X <= 124) && (e.Y >= 169) && e.Y <= 179)
             {
+                // ypologismos 8ermokrasias
+                Random random = new Random();
+                double x = random.NextDouble()*(38.6-36.0)+36.0;
+                x = Math.Round(x,1);
+                label3.Text = x.ToString() + " °C";
+                label3.Visible = true;
                 pictureBox1.Image = Properties.Resources.whatIsTemperature;
+
+                //emfanish o8onhs
+                richTextBox1.Visible = true;
+                pictureBox7.Visible = true;
+                pictureBox2.Visible = true;
+               
+
+                if (x <= 36.6)
+                    richTextBox1.Text = "Μπορείτε να περάσετε.";
+                else if (x<=37.2)
+                    richTextBox1.Text = "Ξαναδοκιμάστε σε 5'.";
+                else if (x<=38)
+                    richTextBox1.Text = "Έχετε δέκατα.\nΠροτείνουμε προσοχή.";
+                else
+                    richTextBox1.Text = "Προτείνουμε να κάνετε τεστ κορονοϊού.";
             }
         }
 
         private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
         {
-            if ((e.X >= 113 && e.X <= 120) && (e.Y >= 136) && e.Y <= 143)
+            if ((e.X >= 115 && e.X <= 124) && (e.Y >= 169) && e.Y <= 179)
                 pictureBox1.Cursor = Cursors.Hand;
             else
                 pictureBox1.Cursor = Cursors.Default;

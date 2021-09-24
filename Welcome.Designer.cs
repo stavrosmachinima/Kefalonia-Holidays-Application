@@ -82,7 +82,7 @@ namespace allhlepidrash
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(670, 424);
+            this.label3.Location = new System.Drawing.Point(654, 424);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(117, 21);
             this.label3.TabIndex = 2;
@@ -104,7 +104,7 @@ namespace allhlepidrash
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(336, 218);
+            this.label4.Location = new System.Drawing.Point(350, 218);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(137, 21);
             this.label4.TabIndex = 4;
@@ -160,7 +160,7 @@ namespace allhlepidrash
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(12, 424);
+            this.label6.Location = new System.Drawing.Point(25, 424);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(216, 21);
             this.label6.TabIndex = 9;
@@ -182,7 +182,7 @@ namespace allhlepidrash
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(326, 424);
+            this.label7.Location = new System.Drawing.Point(350, 424);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(152, 21);
             this.label7.TabIndex = 11;
