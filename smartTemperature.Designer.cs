@@ -201,6 +201,7 @@ namespace allhlepidrash
             this.pictureBox8.TabStop = false;
             this.pictureBox8.Visible = false;
             this.pictureBox8.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox8_Paint);
+            this.pictureBox8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox8_MouseClick);
             // 
             // smartTemperature
             // 

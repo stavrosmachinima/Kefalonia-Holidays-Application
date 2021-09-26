@@ -12,6 +12,7 @@ namespace allhlepidrash
 {
     public partial class smartTemperature : Form
     {
+        Random random;
         public smartTemperature()
         {
             InitializeComponent();
@@ -49,6 +50,7 @@ namespace allhlepidrash
                 pictureBox5.Visible = false;
                 pictureBox4.Visible = true;
             }
+            random = new Random();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -66,7 +68,6 @@ namespace allhlepidrash
             if ((e.X >= 115 && e.X <= 124) && (e.Y >= 169) && e.Y <= 179)
             {
                 // ypologismos 8ermokrasias
-                Random random = new Random();
                 double x = random.NextDouble()*(38.6-36.0)+36.0;
                 x = Math.Round(x,1);
                 label3.Text = x.ToString() + " °C";
@@ -139,9 +140,14 @@ namespace allhlepidrash
         {
             Graphics gf = e.Graphics;
             Pen pen = new Pen(Color.Black, 3);
-            gf.DrawEllipse(pen, 23, 13, 20, 20);
-            gf.DrawEllipse(pen, 116, 35, 20, 20);
-            gf.DrawEllipse(pen, 150, 65, 20, 20);
+            // oi kykloi allazoun ka8e fora.
+            gf.DrawEllipse(pen, 14, random.Next(13,116), 20, 20);
+            gf.DrawEllipse(pen, 145,random.Next(52,121), 20, 20);
+            gf.DrawEllipse(pen, 230, random.Next(13, 118), 20, 20);
+        }
+
+        private void pictureBox8_MouseClick(object sender, MouseEventArgs e)
+        {
         }
     }
 }

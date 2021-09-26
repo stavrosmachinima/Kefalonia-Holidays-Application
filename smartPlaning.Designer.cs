@@ -84,10 +84,10 @@ namespace allhlepidrash
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(559, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(148, 21);
+            this.label1.Size = new System.Drawing.Size(174, 25);
             this.label1.TabIndex = 2;
             this.label1.Text = "Zoomed in Screen";
             // 
@@ -95,7 +95,7 @@ namespace allhlepidrash
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(395, 9);
+            this.label2.Location = new System.Drawing.Point(463, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(230, 32);
             this.label2.TabIndex = 3;
@@ -129,9 +129,9 @@ namespace allhlepidrash
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(849, 158);
+            this.pictureBox2.Location = new System.Drawing.Point(844, 149);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(151, 89);
+            this.pictureBox2.Size = new System.Drawing.Size(268, 138);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -144,10 +144,10 @@ namespace allhlepidrash
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.LightSalmon;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(873, 129);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(929, 126);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 15);
+            this.label4.Size = new System.Drawing.Size(108, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "Επέλεξε μέρος";
             this.label4.Visible = false;
@@ -170,10 +170,10 @@ namespace allhlepidrash
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.LightSalmon;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(841, 88);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(886, 88);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(159, 21);
+            this.label5.Size = new System.Drawing.Size(188, 25);
             this.label5.TabIndex = 9;
             this.label5.Text = "Βέλτιστη Διαδρομή";
             this.label5.Visible = false;
@@ -182,7 +182,7 @@ namespace allhlepidrash
             // 
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(949, 9);
+            this.pictureBox4.Location = new System.Drawing.Point(1024, 9);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(75, 62);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -195,7 +195,7 @@ namespace allhlepidrash
             // 
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(949, 9);
+            this.pictureBox5.Location = new System.Drawing.Point(1024, 9);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(75, 62);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -285,9 +285,9 @@ namespace allhlepidrash
             // 
             this.pictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(849, 158);
+            this.pictureBox8.Location = new System.Drawing.Point(844, 149);
             this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(151, 89);
+            this.pictureBox8.Size = new System.Drawing.Size(268, 138);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox8.TabIndex = 45;
             this.pictureBox8.TabStop = false;
@@ -301,7 +301,7 @@ namespace allhlepidrash
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
-            this.ClientSize = new System.Drawing.Size(1037, 461);
+            this.ClientSize = new System.Drawing.Size(1117, 461);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.richTextBox3);

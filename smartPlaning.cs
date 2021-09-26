@@ -13,6 +13,7 @@ namespace allhlepidrash
 {
     public partial class smartPlaning : Form
     {
+        Random random;
         int count=0;
 
         RichTextBox dynamicRichTextBox;
@@ -34,7 +35,7 @@ namespace allhlepidrash
                 pictureBox5.Visible = false;
                 pictureBox4.Visible = true;
             }
-
+            random = new Random();
         }
 
         private void smartPlaning_Paint(object sender, PaintEventArgs e)
@@ -111,7 +112,7 @@ namespace allhlepidrash
             else if (count == 2)
             {                
                 comboBox1.Visible = false;
-                dynamicRichTextBox.Text = "Επέλεξε τοποθεσία. Έχουμε σημειώσει στον χάρτη τα κοντινότερα σημεία.";
+                dynamicRichTextBox.Text = "Επέλεξε τοποθεσία.";
                 pictureBox3.Visible = true;
                 button1.Text = "Αποστολή";
                 // ama einai mono ena meros pros8ese gia na paei sto proteleftaio vhma
@@ -139,7 +140,7 @@ namespace allhlepidrash
             else if (count == 4)
             {
                 comboBox1.Visible = false;
-                dynamicRichTextBox.Text = "Επέλεξε τοποθεσία. Έχουμε σημειώσει στον χάρτη τα κοντινότερα σημεία.";
+                dynamicRichTextBox.Text = "Επέλεξε τοποθεσία.";
                 pictureBox3.Visible = true;
                 button1.Text = "Αποστολή";
                 //// ama einai mono dyo merh pros8ese gia na paei sto proteleftaio vhma
@@ -167,7 +168,7 @@ namespace allhlepidrash
             else if (count == 6)
             {
                 comboBox1.Visible = false;
-                dynamicRichTextBox.Text = "Επέλεξε τοποθεσία. Έχουμε σημειώσει στον χάρτη τα κοντινότερα σημεία.";
+                dynamicRichTextBox.Text = "Επέλεξε τοποθεσία.";
                 pictureBox3.Visible = true;
                 button1.Text = "Αποστολή";
             }
@@ -316,11 +317,7 @@ namespace allhlepidrash
 
         private void pictureBox2_Paint(object sender, PaintEventArgs e)
         {
-            Graphics gf = e.Graphics;
-            Pen pen = new Pen(Color.Black, 3);
-            gf.DrawEllipse(pen, 23, 13, 20, 20);
-            gf.DrawEllipse(pen, 116, 35, 20, 20);
-            gf.DrawEllipse(pen, 65, 65, 20, 20);
+
         }
 
         private void pictureBox8_Paint(object sender, PaintEventArgs e)
@@ -329,8 +326,11 @@ namespace allhlepidrash
             Graphics gf = e.Graphics;
             Pen pen = new Pen(Color.Black, 3);
             GraphicsPath capPath = new GraphicsPath();
-            gf.DrawLine(pen, 62, 73, 122, 59);
-            gf.DrawLine(pen, 122, 59, 126, 0);
+            // h diadromh allazei ka8e fora.
+            int secondPointX = random.Next(204, 254);
+            int secondPointY = random.Next(89, 127);
+            gf.DrawLine(pen,random.Next(98,153),random.Next(87,123), secondPointX,secondPointY);
+            gf.DrawLine(pen, secondPointX, secondPointY, random.Next(193, 251), random.Next(7, 47));
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
