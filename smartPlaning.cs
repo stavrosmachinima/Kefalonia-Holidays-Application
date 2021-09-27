@@ -92,7 +92,7 @@ namespace allhlepidrash
 
             if (comboBox1.Visible==true&&comboBox1.SelectedIndex.ToString() == "-1")
             {
-                MessageBox.Show("Πρέπει να διαλέξεις μεταφορικό μέσο");
+                MessageBox.Show("Πρέπει να διαλέξεις μεταφορικό μέσο.");
                 return;
             }
 
@@ -104,7 +104,7 @@ namespace allhlepidrash
                 button1.Location = new Point(639, 313);
                 comboBox1.Visible = true;
                 createDynamicRichTextBox();
-                dynamicRichTextBox.Text = "Πώς θα γίνει η μετάβαση για "+places[0]+" ;";
+                dynamicRichTextBox.Text = "Πώς θα γίνει η μετάβαση για "+places[0].Trim()+";";
                 richTextBox1.Hide();
                 Controls.Add(dynamicRichTextBox);
                 button1.Text = "Επόμενο";
@@ -130,7 +130,7 @@ namespace allhlepidrash
                 }
                 didHeOrSheClick = false;
                 comboBox1.Visible = true;
-                dynamicRichTextBox.Text = "Πώς θα γίνει η μετάβαση για " + places[1] + " ;";
+                dynamicRichTextBox.Text = "Πώς θα γίνει η μετάβαση για " + places[1].Trim() + ";";
                 button1.Text = "Επόμενο";
                 pictureBox2.Visible = false;
                 pictureBox3.Visible = false;
@@ -158,7 +158,7 @@ namespace allhlepidrash
                 }
                 didHeOrSheClick = false;
                 comboBox1.Visible = true;
-                dynamicRichTextBox.Text = "Πώς θέλετε να πάτε για " + places[2] + " ;";
+                dynamicRichTextBox.Text = "Πώς θέλετε να πάτε για " + places[2].Trim() + ";";
                 button1.Text = "Επόμενο";
                 pictureBox2.Visible = false;
                 pictureBox3.Visible = false;
