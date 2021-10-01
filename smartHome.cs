@@ -36,8 +36,8 @@ namespace allhlepidrash
             System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(System.Drawing.Color.White);
             System.Drawing.Graphics formGraphics;
             formGraphics = this.CreateGraphics();
-            formGraphics.FillEllipse(myBrush, new Rectangle(650, 280, 40, 40));
-            formGraphics.FillEllipse(myBrush, new Rectangle(620, 290, 25, 25));
+            formGraphics.FillEllipse(myBrush, new Rectangle(610, 280, 40, 40));
+            formGraphics.FillEllipse(myBrush, new Rectangle(580, 290, 25, 25));
             myBrush.Dispose();
             formGraphics.Dispose();
         }

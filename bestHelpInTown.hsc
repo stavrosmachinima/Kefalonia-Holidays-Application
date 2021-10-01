@@ -8,8 +8,8 @@ HelpScribble project file.
 
 
 FALSE
-
-C:\Users\p.ntoulos\Downloads
+0x0408   Greek
+C:\Users\p.ntoulos\Downloads,C:\Users\stpep\source\repos\allhlepidrash\pictures
 1
 BrowseButtons()
 0
@@ -43,10 +43,10 @@ Previous
 Next
 FALSE
 
-2
+7
 10
 Scribble10
-Εφαρμογή
+First Steps
 
 
 
@@ -56,20 +56,74 @@ Writing
 
 
 FALSE
-26
+24
+{\rtf1\ansi\ansicpg1253\deff0\deflang1032{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil\fcharset161{\*\fname Arial;}Arial Greek;}}
+\viewkind4\uc1\pard\qc\lang1033\fs20 
+\par \b\fs36 FIRST STEPS\lang1032\f1 
+\par 
+\par \pard\b0\fs28 To use the application, you will need the following tools / knowledge:
+\par 
+\par 1) Simple knowledge of User-Interfaces
+\par 
+\par For example you can press buttons and \lang1033\f0 they may\lang1032\f1  make different \lang1033\f0 reactions. For example they can \lang1032\f1 move or calculat\lang1033\f0 e among other things\lang1032\f1 . There are also many clickable images that can be seen by \lang1033\f0 the change of\lang1032\f1  the \lang1033\f0 mouse \lang1032\f1 shape to a pointer.
+\par 
+\par 
+\par 2) Understanding Constraints
+\par 
+\par The simulations do not reflect reality, but it takes a\lang1033\f0  bit of imagination\lang1032\f1  to see how they work.
+\par 
+\par For example, many times the application waits for the user to enter a voice message, but obviously the voice message will not be real, as there is no proper technical support to receive the voice message.
+\par 
+\par 
+\par 3) Expectations
+\par 
+\par Many times different users imagine that the application works differently, as everyone perceives reality in their own way.
+\par 
+\par To solve the above problem, the User-Manual has been created that explains in detail how the application works, as well as this Help, to help users understand how these simulations work for the\lang1033\f0 ir\lang1032\f1  best service and user experience.
+\par }
+15
+Scribble15
+Sessions
+
+
+
+
+Writing
+
+
+
+FALSE
+4
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil Arial;}}
+\viewkind4\uc1\pard\f0\fs20 
+\par 
+\par }
+20
+Scribble20
+Menu
+
+
+
+
+Writing
+
+
+
+FALSE
+31
 {\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset161{\*\fname Arial;}Arial Greek;}{\f1\fnil\fcharset0 Arial;}}
 {\colortbl ;\red0\green0\blue0;\red128\green0\blue0;}
-\viewkind4\uc1\pard\qc\cf1\lang1032\b\f0\fs36\'c5\'f6\'e1\'f1\'ec\'ef\'e3\'de
+\viewkind4\uc1\pard\qc\cf1\lang1032\b\f0\fs36 Menu
 \par \fs28 
-\par \pard\b0\'c7 \'c5\'f6\'e1\'f1\'ec\'ef\'e3\'de \'e1\'f5\'f4\'de \'e1\'f0\'ef\'f4\'e5\'eb\'e5\'df\'f4\'e1\'e9 \'e1\'f0\'fc \'dd\'ed\'e1 \'f3\'fd\'ed\'ef\'eb\'ef 5 \lang1033\f1 simulations\lang1032\f0 . 
+\par \pard\lang1033\b0\f1 The application consists of a set of 5 simulations.
 \par 
-\par \'d4\'ef \'ea\'dc\'e8\'e5 \lang1033\f1 simulation \lang1032\f0\'f4\'f1\'dd\'f7\'e5\'e9 \'e1\'ed\'e5\'ee\'dc\'f1\'f4\'e7\'f4\'e1 \'ea\'e1\'e9 \'e4\'e5\'ed \'f3\'f5\'ed\'e4\'dd\'dd\'f4\'e1\'e9 \'ec\'e5 \'ea\'e1\'ed\'dd\'ed\'e1\'ed \'f4\'f1\'fc\'f0\'ef \'ec\'e5 \'f4\'e1 \'f0\'f1\'ef\'e7\'e3\'ef\'fd\'ec\'e5\'ed\'e1 \'de \'e5\'f0\'fc\'ec\'e5\'ed\'e1 \'f4\'ef\'f5.
+\par Each simulation runs independently and is not connected in any way with its previous or next.
 \par 
-\par \'d4\'e7\'ed \'e5\'e9\'ea\'fc\'ed\'e1 \'f4\'ef\'f5 \lang1033\f1 main menu \lang1032\f0\'ec\'f0\'ef\'f1\'e5\'df\'f4\'e5 \'ed\'e1 \'f4\'e7\'ed \'e4\'e5\'df\'f4\'e5 \'f0\'e1\'f1\'e1\'ea\'dc\'f4\'f9.
-\par 
+\par The image of the main menu can be seen below. 
+\par \lang1032\f0 
 \par \cf2\{bmc mainMenu.PNG\}
 \par 
-\par \cf1\'d3\'f4\'e7\'ed \'e5\'e9\'ea\'fc\'ed\'e1 \'f0\'e5\'f1\'e9\'dd\'f7\'ef\'ed\'f4\'e1\'e9 \'ef\'e9 \'e5\'ee\'de\'f2 \'e5\'ed\'fc\'f4\'e7\'f4\'e5\'f2.
+\par \cf1 The image contains the following sections. 
 \par 
 \par 1)\lang1033\f1  Application
 \par 
@@ -81,11 +135,16 @@ FALSE
 \par 
 \par 5) Delivery gone Smart
 \par 
-\par 6) Smart Planning\cf2\lang1032\f0 
+\par 6) Smart Planning
+\par 
+\par \b Mute/Unmute Button:
+\par \b0 Also the user can change at every moment if she wants to hear soft music by clicking this button.
+\par 
+\par \cf2\lang1032\f0 
 \par }
-20
-Scribble20
-Πρώτα Βήματα
+25
+Scribble25
+Welcome
 
 
 
@@ -95,37 +154,137 @@ Writing
 
 
 FALSE
-24
-{\rtf1\ansi\ansicpg1253\deff0\deflang1032{\fonttbl{\f0\fnil Arial;}{\f1\fnil\fcharset161{\*\fname Arial;}Arial Greek;}{\f2\fnil\fcharset0 Arial;}}
-\viewkind4\uc1\pard\f0\fs20 
-\par \pard\qc\b\f1\fs36\'d0\'f1\'fe\'f4\'e1 \'c2\'de\'ec\'e1\'f4\'e1
+11
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}{\f2\fnil\fcharset161{\*\fname Arial;}Arial Greek;}}
+{\colortbl ;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\qc\cf1\b\fs36 Welcome\cf0\f1 
+\par \pard\b0\fs20 
+\par \cf2\lang1032\f2\fs28\{bmc eisagogi.PNG\}
+\par \cf0 
+\par The image above welcomes users to the app, giving them an idea of what it \lang1033\f0 is planning to present\lang1032\f2 .
+\par \lang1033\f0 For example all these electronic devices are\lang1032\f2  making the house look \lang1033\f0 "\lang1032\f2 smart\lang1033\f0 ", also\lang1032\f2  the user has a lot of\lang1033\f0  these\lang1032\f2  applications at his disposal\lang1033\f0 , making the user to imagine the future.\lang1032\f2 
 \par 
-\par \pard\b0\fs28\'c3\'e9\'e1 \'ed\'e1 \'f7\'f1\'e7\'f3\'e9\'ec\'ef\'f0\'ef\'e9\'de\'f3\'e5\'f4\'e5 \'f4\'e7\'ed \'e5\'f6\'e1\'f1\'ec\'ef\'e3\'de, \'e8\'e1 \'f7\'f1\'e5\'e9\'e1\'f3\'f4\'e5\'df\'f4\'e5 \'f4\'e1 \'f0\'e1\'f1\'e1\'ea\'dc\'f4\'f9 \'e5\'f1\'e3\'e1\'eb\'e5\'df\'e1/\'e3\'ed\'fe\'f3\'e5\'e9\'f2:
+\par The purpose of \lang1033\f0 t\lang1032\f2 he student\lang1033\f0  at this \lang1032\f2 page is to analyze the general purpose of the application, what steps it takes to achieve \lang1033\f0 the goal\lang1032\f2 , as well as to make users \lang1033\f0 to imagine for themselves the cases it may present and\lang1032\f2  \lang1033\f0 make them think\lang1032\f2  about how human needs \lang1033\f0 can be\lang1032\f2  \lang1033\f0 solved\lang1032\f2  in a \lang1033\f0 futuristic \lang1032\f2 "Smart Age". 
+\par }
+35
+Scribble35
+Home Gone Smart
+
+
+
+
+Writing
+
+
+
+FALSE
+36
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}
+{\colortbl ;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\qc\cf1\b\fs36 Home Gone Smart\f1 
+\par \pard\cf0\b0\fs20 
 \par 
-\par 1) \'c1\'f0\'eb\'de \'e3\'ed\'fe\'f3\'e7 \'f4\'f9\'ed \lang1033\f2 User-Interfaces\lang1032\f1 
 \par 
-\par \fs32\'c3\fs28\'e9\'e1 \'f0\'e1\'f1\'dc\'e4\'e5\'e9\'e3\'ec\'e1 \'ec\'f0\'ef\'f1\'e5\'df\'f4\'e5 \'ed\'e1 \'f0\'e1\'f4\'de\'f3\'e5\'f4\'e5 \'f0\'dc\'ed\'f9 \'f3\'e5 \'ea\'ef\'f5\'ec\'f0\'e9\'dc \'ea\'e1\'e9 \'e1\'f5\'f4\'dc \'e8\'e1 \'ea\'dc\'ed\'ef\'f5\'ed \'e4\'e9\'e1\'f6\'ef\'f1\'dd\'f2 \'ea\'e9\'ed\'de\'f3\'e5\'e9\'f2 \'e7 \'f5\'f0\'ef\'eb\'ef\'e3\'e9\'f3\'ec\'ef\'fd\'f2. \'c5\'f0\'df\'f3\'e7\'f2, \'f5\'f0\'dc\'f1\'f7\'ef\'f5\'ed \'f0\'ef\'eb\'eb\'dd\'f2 \lang1033\f2 clickable \lang1032\f1\'e5\'e9\'ea\'fc\'ed\'e5\'f2 \'f0\'ef\'f5 \'f6\'e1\'df\'ed\'e5\'f4\'e1\'e9 \'ec\'e5 \'f4\'e7\'ed \'e1\'eb\'eb\'e1\'e3\'de \'f3\'f7\'de\'ec\'e1\'f4\'ef\'f2 \'f4\'ef\'f5 \'f0\'ef\'ed\'f4\'e9\'ea\'e9\'ef\'fd \'f3\'e5 \lang1033\f2 pointer.
+\par \f0\fs28 This is the first simulation that appears on the menu from left to right. We can see an overview of the house right here.
 \par 
+\par \cf2\{bmc overview.PNG\}\cf0 
 \par 
-\par \lang1032\f1 2) \'ca\'e1\'f4\'e1\'ed\'fc\'e7\'f3\'e7 \'d0\'e5\'f1\'e9\'ef\'f1\'e9\'f3\'ec\'fe\'ed
+\par Every button and image is clickable. 
 \par 
-\par \lang1033\f2 T\lang1032\f1\'e1 \lang1033\f2 simulations \lang1032\f1\'e4\'e5\'ed \'e1\'ed\'f4\'e9\'ea\'e1\'f4\'ef\'f0\'f4\'f1\'df\'e6\'ef\'f5\'ed \'f4\'e7\'ed \'f0\'f1\'e1\'e3\'ec\'e1\'f4\'e9\'ea\'fc\'f4\'e7\'f4\'e1, \'e1\'eb\'eb\'dc \'e8\'dd\'eb\'e5\'e9 \'ec\'e9\'e1 \'f6\'e1\'ed\'f4\'e1\'f3\'df\'e1 \'e3\'e9\'e1 \'ed\'e1 \'e4\'e5\'e9 \'ea\'dc\'f0\'ef\'e9\'ef\'f2 \'f0\'f9\'f2 \'eb\'e5\'e9\'f4\'ef\'f5\'f1\'e3\'ef\'fd\'ed.\strike 
+\par 1) User clicks the on/off image:
 \par 
-\par \strike0\'c3\'e9\'e1 \'f0\'e1\'f1\'dc\'e4\'e5\'e9\'e3\'ec\'e1, \'f0\'ef\'eb\'eb\'dd\'f2 \'f6\'ef\'f1\'dd\'f2 \'e7 \'e5\'f6\'e1\'f1\'ec\'ef\'e3\'de \'f0\'e5\'f1\'e9\'ec\'dd\'ed\'e5\'e9 \'f4\'ef \'f7\'f1\'de\'f3\'f4\'e7 \'ed\'e1 \'e5\'e9\'f3\'e1\'e3\'dc\'e3\'e5\'e9 \'f6\'f9\'ed\'e7\'f4\'e9\'ea\'fc \'ec\'de\'ed\'f5\'ec\'e1, \'e1\'eb\'eb\'eb\'dc \'f0\'f1\'ef\'f6\'e1\'ed\'fe\'f2 \'f4\'ef \'f6\'f9\'ed\'e7\'f4\'e9\'ea\'fc \'ec\'de\'ed\'f5\'ec\'e1 \'e4\'e5\'ed \'e8\'e1 \'e5\'df\'ed\'e1\'e9 \'e1\'eb\'e7\'e8\'e9\'ed\'fc, \'ea\'e1\'e8\'fe\'f2 \'e4\'e5\'ed \'f5\'f0\'dc\'f1\'f7\'e5\'e9 \'ea\'e1\'f4\'dc\'eb\'eb\'e7\'eb\'e7 \'f4\'e5\'f7\'ed\'e9\'ea\'de \'f5\'f0\'ef\'f3\'f4\'de\'f1\'e9\'ee\'e7, \'fe\'f3\'f4\'e5 \'ed\'e1 \'eb\'dc\'e2\'e5\'e9 \'f4\'ef \'f6\'f9\'ed\'e7\'f4\'e9\'ea\'fc \'ec\'de\'ed\'f5\'ec\'e1.
+\par \tab Then the light of the room is on or off depending on what picture appears on the overview.
 \par 
+\par 2) The user clicks room button:
 \par 
-\par 3) \'d0\'f1\'ef\'f3\'e4\'ef\'ea\'df\'e5\'f2
+\par \cf2\{bmc roomDarkLight.PNG\}\cf0 
 \par 
-\par \'d0\'ef\'eb\'eb\'dd\'f2 \'f6\'ef\'f1\'dd\'f2 \'e4\'e9\'e1\'f6\'ef\'f1\'e5\'f4\'e9\'ea\'ef\'df \'f7\'f1\'de\'f3\'f4\'e5\'f2 \'f6\'e1\'ed\'f4\'dc\'e6\'ef\'ed\'f4\'e1\'e9 \'fc\'f4\'e9 \'eb\'e5\'e9\'f4\'ef\'f5\'f1\'e3\'e5\'df \'e4\'e9\'e1\'f6\'ef\'f1\'e5\'f4\'e9\'ea\'dc \'e7 \'e5\'f6\'e1\'f1\'ec\'ef\'e3\'de, \'ea\'e1\'e8\'fe\'f2 \'ef \'ea\'e1\'e8\'dd\'ed\'e1\'f2 \'e1\'ed\'f4\'e9\'eb\'e1\'ec\'e2\'dc\'ed\'e5\'f4\'e1\'e9 \'f4\'e7\'ed \'f0\'f1\'e1\'e3\'ec\'e1\'f4\'e9\'ea\'fc\'f4\'e7\'f4\'e1 \'ec\'e5 \'f4\'ef\'ed \'e4\'e9\'ea\'fc \'f4\'ef\'f5 \'f4\'f1\'fc\'f0\'ef.
+\par Then as we can see from the picture at the right side of the page appears the state of the room that is curretly in. The room light may be on or off, depending on if the user has changed its state or the default state
 \par 
-\par \'c3\'e9\'e1 \'ed\'e1 \'eb\'f5\'e8\'e5\'df \'f4\'ef \'f0\'e1\'f1\'e1\'f0\'dc\'ed\'f9 \'f0\'f1\'fc\'e2\'eb\'e7\'ec\'e1, \'dd\'f7\'e5\'e9 \'f6\'f4\'e9\'e1\'f7\'f4\'e5\'df \'f4\'ef \lang1033\f2 User-Manual\lang1032\f1 , \'ea\'e1\'e8\'fe\'f2 \'ea\'e1\'e9 \'e1\'f5\'f4\'fc \'f4\'ef \lang1033\f2 Help\lang1032\f1 , \'fe\'f3\'f4\'e5 \'ed\'e1 \'e2\'ef\'e7\'e8\'de\'f3\'e5\'e9 \'f4\'ef\'f5\'f2 \'f7\'f1\'de\'f3\'f4\'e5\'f2 \'ed\'e1 \'ea\'e1\'f4\'e1\'eb\'dc\'e2\'ef\'f5\'ed \'f0\'f9\'f2 \'eb\'e5\'e9\'f4\'ef\'f5\'f1\'e3\'ef\'fd\'ed \'e1\'f5\'f4\'e1 \'f4\'e1 \lang1033\f2 simulations\lang1032\f1  \'e3\'e9\'e1 \'f4\'e7\'ed \'ea\'e1\'eb\'fd\'f4\'e5\'f1\'e7\'f3\'e7 \'e5\'ee\'f5\'f0\'e7\'f1\'dd\'f4\'e7\'f3\'e7, \'e1\'eb\'eb\'dc \'ea\'e1\'e9 \'e5\'ec\'f0\'e5\'e9\'f1\'df\'e1 \'f4\'ef\'f5 \'f7\'f1\'de\'f3\'f4\'e7.
+\par 3) The user clicks the temperature buttons:
+\par 
+\par Then the temperature of the room changes depending on its default state(differs from room to room). The temperature of a room doesn't change if the user clicks another room.
+\par 
+\par 4) The user presses the slideshow button:
+\par 
+\par Then a random room appears and it randomly swaps from room to room showing its temperature and its state.
+\par 
+\par 5) The user presses the normal button:
+\par 
+\par Then no action is made if it's already in normal mode, otherwise it changes to normal mode from the slideshow mode.
+\par 
+\par \f1 
+\par }
+40
+Scribble40
+Smart Entrance
+
+
+
+
+Writing
+
+
+
+FALSE
+21
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}
+{\colortbl ;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\qc\cf1\b\fs36 Smart Entrance\f1 
+\par \pard\cf0\b0\fs20 
+\par \cf2\f0\fs28\{bmc door.PNG\}\cf0 
+\par 
+\par This is the first thing the user sees. Well, the user needs to click at the doorknob to move to the next step.
+\par 
+\par After clicking, the user opens the door and sees the bright status of her temperature on top of a machine.
+\par Then a screen appears, with 4 different scenarios.
+\par 
+\par 1)The user has low temperature and she can pass.
+\par 
+\par 2)The user has moderate temperature and she needs to wait sometime until she can do it again.
+\par 
+\par 3)The user has light fever suggesting caution.
+\par 
+\par \cf2\{bmc covidScreen.PNG\}\cf0 
+\par 
+\par 4)The user has fever and then a self-test appears along with information about the closest diagnostic centers in case the user is positive on the self-test.\f1\fs20 
+\par }
+45
+Scribble45
+Smart Sevices for old People
+
+
+
+
+Writing
+
+
+
+FALSE
+14
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}
+{\colortbl ;\red0\green0\blue0;}
+\viewkind4\uc1\pard\qc\cf1\b\fs36 Smart Sevices for old People\b0\f1 
+\par \pard\cf0\fs20 
+\par \f0\fs28 The first thing a user sees is a camera on a room. This room is supposed to be the main room of any apartment, probably containg the living room and/or the dining room.
+\par 
+\par The camera is only on the main room, because other rooms such as bathroom and bedrooms are considered private and people are not allowed to put the surveillance cameras in there as it is forbidden by State Law to collect personal information.
+\par 
+\par For the purposes of this simulation it is supposed to be only on the living room.
+\par 
+\par When a camera doesn't notice the user for a long time, then a Question appears on the control panel and a friendly female voice asks the elderly if she is okay.
+\par 
+\par If the user doesn't respond in a specified time, then the local medical authorites are informed to come and check the situation. This is the default case, the user can also make it to call family relatives instead of the local authorities.\f1\fs20 
 \par }
 0
 0
 0
-2
-1 Εφαρμογή=Scribble10
-1 Πρώτα Βήματα=Scribble20
+5
+1 First Steps
+2 First Steps=Scribble10
+1 Sessions
+2 Menu=Scribble20
+2 Welcome=Scribble25
 7
 *InternetLink
 16711680

@@ -76,7 +76,10 @@ namespace allhlepidrash
             else if (counter > 10)
                 pictureBox3.Visible = true;
             else if (counter>5)
+            {
                 label1.Visible = true;
+            }
+                
         }
     }
 }

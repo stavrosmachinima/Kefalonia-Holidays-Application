@@ -78,9 +78,9 @@ namespace allhlepidrash
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(358, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(312, 32);
+            this.label2.Size = new System.Drawing.Size(306, 32);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Happy Old Peoples\' Home";
+            this.label2.Text = "Smart Old Peoples\' Home";
             // 
             // label1
             // 
