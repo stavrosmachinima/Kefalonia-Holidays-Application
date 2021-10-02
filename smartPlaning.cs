@@ -18,6 +18,14 @@ namespace allhlepidrash
 
         RichTextBox dynamicRichTextBox;
         bool didHeOrSheClick = false;
+
+        int place1x=0;
+        int place1y=0;
+        int place2x=0;
+        int place2y=0;
+        int place3x=0;
+        int place3y=0;
+
         public smartPlaning()
         {
             InitializeComponent();
@@ -169,10 +177,9 @@ namespace allhlepidrash
             {
                 comboBox1.Visible = false;
                 dynamicRichTextBox.Text = "Επέλεξε τοποθεσία.";
-                pictureBox3.Visible = true;
                 button1.Text = "Αποστολή";
-            }
-            else if (count == 7)
+                pictureBox3.Visible = true;
+            }else if (count==7)
             {
                 // ama den exei epile3ei topo8esia gyrna sthn arxh
                 if (!didHeOrSheClick)
@@ -181,13 +188,36 @@ namespace allhlepidrash
                     count = 6;
                     return;
                 }
+                pictureBox3.Visible = false;
+                dynamicRichTextBox.Text = "Παρακαλώ, δώστε μας σημειώσεις ή οποιοδήποτε περιορισμούς έχετε στο ταξίδι σας.\n\n" +
+                    "πχ αν χρειαστείτε καφέ και τι ώρα, τι ώρα θα πρέπει να επιστρέψετε απο τα διάφορα μέρη.";
+                button1.Text = "Επομένο";
+                paintInBackColor();
+            }else if (count==8)
+            {
+                dynamicRichTextBox.Text = "Πχ. Θέλω καφέ στις 4 και θέλω να επιστρέψω όσο τον δυνατόν γρηγορότερα από το Χ μέρος.";
+                dynamicRichTextBox.ReadOnly = false;
+                dynamicRichTextBox.Font = new Font("Segoe UI", 12, FontStyle.Italic);
+                dynamicRichTextBox.GotFocus += RemoveText;
+                dynamicRichTextBox.LostFocus += AddText;
+                button1.Text = "Αποστολή";
+            }
+            else if (count == 9)
+            {
+                dynamicRichTextBox.Font = new Font("Segoe UI", 12, FontStyle.Regular);
+                dynamicRichTextBox.ReadOnly = true;
                 dynamicRichTextBox.Text = "Αυτός είναι ο πιο γρήγορος δρόμος για να εκτελέσετε τα παραπάνω.";
                 pictureBox2.Visible = false;
                 pictureBox3.Visible = true;
-                label5.Visible = false;
-                label4.Visible = false;
-                paintInBackColor();
+                //label5.Visible = false;
+              //  label4.Visible = false;
                 button1.Text = "Επόμενο";
+                pictureBox8.Visible = true;
+                label4.Visible = false;
+                label5.Visible = true;
+                System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(System.Drawing.Color.White);
+                showDynamicCloud(myBrush);
+                myBrush.Dispose();
             }
             else
             {
@@ -279,17 +309,14 @@ namespace allhlepidrash
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            if (count == 9)
+            {
+                return;
+            }
             label4.Visible = true;
             System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(System.Drawing.Color.White);
             showDynamicCloud(myBrush);
             myBrush.Dispose();
-            if (count==7)
-            {
-                pictureBox8.Visible = true;
-                label4.Visible = false;
-                label5.Visible = true;
-                return;
-            }
             pictureBox2.Visible = true;
         }
 
@@ -313,6 +340,23 @@ namespace allhlepidrash
 
         private void pictureBox2_MouseClick(object sender, MouseEventArgs e)
         {
+            // edw apo8hkevei ta merh gia na t dei3ei ston xarth.
+            //Den einai functional afou an epile3ei mono 1 meros o xrhsths den 8a exei xrhsimopoih8ei h 2h metavlhth pixi 
+            if (count == 2)
+            {
+                place1x = e.X;
+                place1y = e.Y;
+            }
+            else if (count==4)
+            {
+                place2x = e.X;
+                place2y = e.Y;
+            }
+            else if (count==6)
+            {
+                place3x = e.X;
+                place3y = e.Y;
+            }
         }
 
         private void pictureBox2_Paint(object sender, PaintEventArgs e)
@@ -322,22 +366,41 @@ namespace allhlepidrash
 
         private void pictureBox8_Paint(object sender, PaintEventArgs e)
         {
-
+            
             Graphics gf = e.Graphics;
             Pen pen = new Pen(Color.Black, 3);
             GraphicsPath capPath = new GraphicsPath();
-            // h diadromh allazei ka8e fora.
+            
+            // ama epile3ei mono 1 meros, 2 merh, 3 merh ktl.
+            if (place2x==0&&place3x==0)
+                gf.DrawLine(pen, random.Next(1,268), random.Next(1,138), place1x, place1y);
+            else if (place3x==0)
+            {
+                gf.DrawLine(pen, random.Next(1, 268), random.Next(1, 138), place1x, place1y);
+                gf.DrawLine(pen, place1x, place1y, place2x, place2y);
+            }
+            else 
+            {
+                gf.DrawLine(pen, random.Next(1, 268), random.Next(1, 138), place1x, place1y);
+                gf.DrawLine(pen, place1x, place1y, place2x, place2y);
+                gf.DrawLine(pen, place2x, place2y, place3x, place3y);
+            }
+            /*
+              // h diadromh allazei ka8e fora.
             int secondPointX = random.Next(204, 254);
             int secondPointY = random.Next(89, 127);
-            gf.DrawLine(pen,random.Next(98,153),random.Next(87,123), secondPointX,secondPointY);
+            gf.DrawLine(pen, random.Next(98, 153), random.Next(87, 123), secondPointX, secondPointY);
             gf.DrawLine(pen, secondPointX, secondPointY, random.Next(193, 251), random.Next(7, 47));
+            */
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
+            /*
             pictureBox8.Visible = false;
             paintInBackColor();
             label5.Visible = false;
+            */
         }
 
         private void pictureBox8_MouseClick(object sender, MouseEventArgs e)
@@ -346,7 +409,27 @@ namespace allhlepidrash
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
+          
+        }
 
+        public void RemoveText(object sender,EventArgs e)
+        {
+            if (dynamicRichTextBox.Text == "Πχ. Θέλω καφέ στις 4 και θέλω να επιστρέψω όσο τον δυνατόν γρηγορότερα από το Χ μέρος.")
+            {
+                dynamicRichTextBox.Font = new Font("Segoe UI", 12, FontStyle.Regular);
+                dynamicRichTextBox.Text = "";
+            }
+ 
+        }
+
+        public void AddText(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(dynamicRichTextBox.Text))
+                dynamicRichTextBox.Text= "Πχ. Θέλω καφέ στις 4 και θέλω να επιστρέψω όσο τον δυνατόν γρηγορότερα από το Χ μέρος.";
+        }
+
+        private void richTextBox1_SelectionChanged(object sender, EventArgs e)
+        {
         }
     }
 }

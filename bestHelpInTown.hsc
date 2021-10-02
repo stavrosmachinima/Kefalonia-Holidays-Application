@@ -43,7 +43,7 @@ Previous
 Next
 FALSE
 
-7
+9
 10
 Scribble10
 First Steps
@@ -251,7 +251,7 @@ FALSE
 \par }
 45
 Scribble45
-Smart Sevices for old People
+Smart Sevices for Old People
 
 
 
@@ -264,7 +264,7 @@ FALSE
 14
 {\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}
 {\colortbl ;\red0\green0\blue0;}
-\viewkind4\uc1\pard\qc\cf1\b\fs36 Smart Sevices for old People\b0\f1 
+\viewkind4\uc1\pard\qc\cf1\b\fs36 Smart Sevices for Old People\b0\f1 
 \par \pard\cf0\fs20 
 \par \f0\fs28 The first thing a user sees is a camera on a room. This room is supposed to be the main room of any apartment, probably containg the living room and/or the dining room.
 \par 
@@ -272,9 +272,94 @@ FALSE
 \par 
 \par For the purposes of this simulation it is supposed to be only on the living room.
 \par 
-\par When a camera doesn't notice the user for a long time, then a Question appears on the control panel and a friendly female voice asks the elderly if she is okay.
+\par When a camera doesn't notice the user for a long time, then a Question appears on the control panel and a friendly female voice asks the elderly if they are okay.
 \par 
-\par If the user doesn't respond in a specified time, then the local medical authorites are informed to come and check the situation. This is the default case, the user can also make it to call family relatives instead of the local authorities.\f1\fs20 
+\par If the elderly don't respond in a specified time, then the local medical authorites are informed to come and check the situation. This is the default case. The user can also make it to call family relatives instead of the local authorities first and only if they dont pick up, the local authorities are informed.\f1\fs20 
+\par }
+50
+Scribble50
+Online Delivery
+
+
+
+
+Writing
+
+
+
+FALSE
+23
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}
+{\colortbl ;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\qc\cf1\b\fs36 Online Delivery\cf0\b0\f1\fs20 
+\par \pard 
+\par \cf2\{bmc welcomingScreen.PNG\}
+\par 
+\par \cf1\f0\fs28 This is the welcoming screen. Hit next.
+\par 
+\par \cf2\{bmc supermarket.PNG\}\cf1 
+\par 
+\par Then you have the option of choosing from a variety of products that are available in the store.
+\par 
+\par Make notice though, you have to buy at least one piece of something to forward your process.
+\par 
+\par You use the + and the - sign to increase or decrease the amount you are going to buy. You can see the amount you will buy in the textboxes.
+\par You can't change the text in the textboxes though.
+\par 
+\par Then Hit next.
+\par 
+\par \cf2\{bmc cardDetails.PNG\}\cf1 
+\par 
+\par You can see the total amount you will pay in the top. Then after you enter your card details in the textboxes, you can hit Next and the process will be forwarded to the Tok Tok supermarket, which will transfer the goods at your home as soon as possible.\cf0\f1\fs20 
+\par }
+55
+Scribble55
+Smart Planning
+
+
+
+
+Writing
+
+
+
+FALSE
+36
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}
+{\colortbl ;\red0\green0\blue0;\red128\green0\blue0;}
+\viewkind4\uc1\pard\qc\cf1\b\fs36 Smart Planning\f1 
+\par \pard\cf0\b0\fs20 
+\par 
+\par \cf2\{bmc smartPl.PNG\}
+\par 
+\par 
+\par \cf1\f0\fs28 The user opens his cellphone, finds messages application and types 13033 as the recipient. Then, as you can see in the picture, the user can type her schedule according to the form that the user can minimize by pressing the - sign.
+\par 
+\par For the purposes of this Help we will enter the same message as the form. You should also take care so that the schedule will not be able to process more than 3 activities at a given day. This functionality is coming on to the next update.
+\par 
+\par \cf2\{bmc pickAtransport.PNG\}
+\par 
+\par \cf1 After the user clicks 'Send', the user has to decide what transport she will use for every different place she has on her schedule for the day.
+\par 
+\par \cf2\{bmc pickAplace.PNG\}
+\par \cf1 
+\par After the user clicks 'Next' she has to choose the destination on the Google Maps application.
+\par The google map sign in her cellphone appears and the user has to click on it to open the application. Afterwards she can choose her destination on the maps and then hit 'Send'.
+\par 
+\par The above process, the user has to repeat for every different place she will visit during her day.
+\par 
+\par As the last step the user has the opportunity to enter notes or any limitations for the algorithm to take note of.
+\par The user clicks on the next image and the placeholder disappears.
+\par 
+\par \cf2\{bmc notes.PNG\}\cf1 
+\par 
+\par \cf2\{bmc bestDestination.PNG\}
+\par 
+\par \cf1 At the finale, the user can see the best route the program found for her own destinations.
+\par 
+\par For the purposes of this simulation, the application uses as first location the user's home which is calculated randomly on the map. 
+\par 
+\par \cf0\f1\fs20 
 \par }
 0
 0
