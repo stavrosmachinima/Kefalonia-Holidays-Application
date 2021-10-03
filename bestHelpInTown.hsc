@@ -144,7 +144,7 @@ FALSE
 \par }
 25
 Scribble25
-Welcome
+Welcome Page
 
 
 
@@ -218,7 +218,7 @@ FALSE
 40
 Scribble40
 Smart Entrance
-
+Covid;Doorknob;Entrance;
 
 
 
@@ -279,7 +279,7 @@ FALSE
 50
 Scribble50
 Online Delivery
-
+Supermarket;
 
 
 
@@ -315,7 +315,7 @@ FALSE
 55
 Scribble55
 Smart Planning
-
+Google Maps;Schedule;
 
 
 
@@ -324,7 +324,7 @@ Writing
 
 
 FALSE
-36
+33
 {\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}{\f1\fnil Arial;}}
 {\colortbl ;\red0\green0\blue0;\red128\green0\blue0;}
 \viewkind4\uc1\pard\qc\cf1\b\fs36 Smart Planning\f1 
@@ -346,30 +346,32 @@ FALSE
 \par After the user clicks 'Next' she has to choose the destination on the Google Maps application.
 \par The google map sign in her cellphone appears and the user has to click on it to open the application. Afterwards she can choose her destination on the maps and then hit 'Send'.
 \par 
-\par The above process, the user has to repeat for every different place she will visit during her day.
+\par The user has to repeat the above process for every different place she will visit during her day.
 \par 
 \par As the last step the user has the opportunity to enter notes or any limitations for the algorithm to take note of.
-\par The user clicks on the next image and the placeholder disappears.
+\par The user clicks on the next image and the placeholder disappears. The placeholder can be seen with the Light Italic Font it uses.
 \par 
 \par \cf2\{bmc notes.PNG\}\cf1 
 \par 
 \par \cf2\{bmc bestDestination.PNG\}
+\par \cf1 At the finale, the user can see the best route the program found for her own destinations and also the algorithm proposes a schedule for the user.
 \par 
-\par \cf1 At the finale, the user can see the best route the program found for her own destinations.
-\par 
-\par For the purposes of this simulation, the application uses as first location the user's home which is calculated randomly on the map. 
-\par 
-\par \cf0\f1\fs20 
+\par For the purposes of this simulation, the application uses as first location the user's home which is calculated randomly on the map.\cf0\f1\fs20 
 \par }
 0
 0
 0
-5
+10
 1 First Steps
 2 First Steps=Scribble10
 1 Sessions
 2 Menu=Scribble20
-2 Welcome=Scribble25
+2 Welcome Page=Scribble25
+2 Home Gone Smart=Scribble35
+2 Smart Entrance=Scribble40
+2 Smart Sevices for Old People=Scribble45
+2 Online Delivery=Scribble50
+2 Smart Planning=Scribble55
 7
 *InternetLink
 16711680
