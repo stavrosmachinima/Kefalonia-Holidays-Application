@@ -235,7 +235,7 @@ namespace allhlepidrash
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, @"..\..\..\bestHelpInTown.chm");
+            Help.ShowHelp(this, @"..\..\..\bestHelpInTown.chm",HelpNavigator.TopicId,"35");
         }
 
         private void childrenButton_Click(object sender, EventArgs e)

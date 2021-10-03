@@ -1,7 +1,7 @@
 ﻿
 namespace allhlepidrash
 {
-    partial class Welcome
+    partial class Menu
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace allhlepidrash
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Welcome));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();

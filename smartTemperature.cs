@@ -60,7 +60,7 @@ namespace allhlepidrash
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, @"..\..\..\bestHelpInTown.chm");
+            Help.ShowHelp(this, @"..\..\..\bestHelpInTown.chm", HelpNavigator.TopicId, "40");
         }
 
         private void pictureBox1_MouseClick(object sender, MouseEventArgs e)

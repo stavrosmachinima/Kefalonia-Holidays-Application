@@ -19,12 +19,17 @@ namespace allhlepidrash
         RichTextBox dynamicRichTextBox;
         bool didHeOrSheClick = false;
 
+        //syntetagmenes twn merwn
         int place1x=0;
         int place1y=0;
         int place2x=0;
         int place2y=0;
         int place3x=0;
         int place3y=0;
+        //metavlhtes gia na kratane to transportation
+        string transport1;
+        string transport2;
+        string transport3;
 
         public smartPlaning()
         {
@@ -77,6 +82,9 @@ namespace allhlepidrash
             // to parakatw snippet pairnei ta merh pou exeis valei kai ta spaei mexri na sylle3ei 
             // to katallhlo string pou einai to meros pou 8elei na paei o xrhsths.
             List<string> places = new List<string>();
+            List<string> time = new List<string>();
+            
+
             try
             {
                 String[] temp = richTextBox1.Text.Trim().Split("\n");
@@ -91,6 +99,7 @@ namespace allhlepidrash
                 {
                     String[] temp2=placeHour.Split("στις");
                     places.Add(temp2[0]);
+                    time.Add(temp2[1]);
                 }
             }
             catch(Exception ex)
@@ -118,7 +127,8 @@ namespace allhlepidrash
                 button1.Text = "Επόμενο";
             }
             else if (count == 2)
-            {                
+            {
+                transport1 = comboBox1.SelectedItem.ToString();
                 comboBox1.Visible = false;
                 dynamicRichTextBox.Text = "Επέλεξε τοποθεσία.";
                 pictureBox3.Visible = true;
@@ -147,6 +157,7 @@ namespace allhlepidrash
             }
             else if (count == 4)
             {
+                transport2 = comboBox1.SelectedItem.ToString();
                 comboBox1.Visible = false;
                 dynamicRichTextBox.Text = "Επέλεξε τοποθεσία.";
                 pictureBox3.Visible = true;
@@ -175,6 +186,7 @@ namespace allhlepidrash
             }
             else if (count == 6)
             {
+                transport3 = comboBox1.SelectedItem.ToString();
                 comboBox1.Visible = false;
                 dynamicRichTextBox.Text = "Επέλεξε τοποθεσία.";
                 button1.Text = "Αποστολή";
@@ -197,7 +209,7 @@ namespace allhlepidrash
             {
                 dynamicRichTextBox.Text = "Πχ. Θέλω καφέ στις 4 και θέλω να επιστρέψω όσο τον δυνατόν γρηγορότερα από το Χ μέρος.";
                 dynamicRichTextBox.ReadOnly = false;
-                dynamicRichTextBox.Font = new Font("Segoe UI", 12, FontStyle.Italic);
+                dynamicRichTextBox.Font = new Font("Segoe UI Light", 12, FontStyle.Italic);
                 dynamicRichTextBox.GotFocus += RemoveText;
                 dynamicRichTextBox.LostFocus += AddText;
                 button1.Text = "Αποστολή";
@@ -212,12 +224,51 @@ namespace allhlepidrash
                 //label5.Visible = false;
               //  label4.Visible = false;
                 button1.Text = "Επόμενο";
-                pictureBox8.Visible = true;
                 label4.Visible = false;
                 label5.Visible = true;
                 System.Drawing.SolidBrush myBrush = new System.Drawing.SolidBrush(System.Drawing.Color.White);
                 showDynamicCloud(myBrush);
                 myBrush.Dispose();
+                richTextBox4.Visible = true;
+                try
+                {
+                    if (places.Count==1)
+                    {
+                        time[0] = time[0].Trim();
+                        int time1 = int.Parse(time[0].Split(" ")[0]);
+                        richTextBox4.Text = "Προετοιμάζεστε στις " + (time1 - 2).ToString() + ". Πηγαίνετε με " + transport1 + " για " + places[0] + ".";
+                    }
+                    else if (places.Count==2)
+                    {
+                        time[0] = time[0].Trim();
+                        time[1] = time[1].Trim();
+                        int time1 = int.Parse(time[0].Split(" ")[0]);
+                        int time2 = int.Parse(time[1].Split(" ")[0]);
+                        richTextBox4.Text = "Ξύπνημα στις " + (time1 - 2).ToString() + " το πρωί. Πηγαίνετε με " + transport1 + " για " + places[0] + "."
+                           + " Λίγο πριν τις " + (time2 - 1).ToString() + " πηγαίνετε με " + transport2 + " για να πάτε για " + places[1] + ".";
+                    }
+                    else if (places.Count==3)
+                    {
+                        time[0] = time[0].Trim();
+                        time[1] = time[1].Trim();
+                        time[2] = time[2].Trim();
+                        int time1 = int.Parse(time[0].Split(" ")[0]);
+                        int time2 = int.Parse(time[1].Split(" ")[0]);
+                        int time3 = int.Parse(time[2].Split(" ")[0]);
+
+                        richTextBox4.Text = "Ξύπνημα στις " + (time1 - 2).ToString() + " το πρωί. Πηγαίνετε με " + transport1 + " για " + places[0].Trim() + "."
+                            + " Λίγο πριν τις " + (time2 - 1).ToString() + " πηγαίνετε με " + transport2 + " για να πάτε για " + places[1].Trim() + "."
+                            + " Και τέλος πριν τις " + (time3 - 1).ToString() + " πηγαίνετε με " + transport3 + " για να πάτε για " + places[2].Trim()+ ".";
+                    }
+                    pictureBox8.Visible = true;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Δεν βρέθηκε το σωστό φορμάτ. Κλείστε και ξανανοίξτε την εφαρμογή");
+                    MessageBox.Show(ex.Message);
+                    return;
+                }
+                
             }
             else
             {
@@ -264,7 +315,7 @@ namespace allhlepidrash
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, @"..\..\..\bestHelpInTown.chm");
+            Help.ShowHelp(this, @"..\..\..\bestHelpInTown.chm", HelpNavigator.TopicId, "55");
         }
 
        private void showDynamicCloud(System.Drawing.SolidBrush myBrush)

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace allhlepidrash
 {
-    public partial class Welcome : Form
+    public partial class Menu : Form
     {
-        public Welcome()
+        public Menu()
         {
             InitializeComponent();
         }
@@ -104,7 +104,7 @@ namespace allhlepidrash
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            Help.ShowHelp(this, @"..\..\..\bestHelpInTown.chm");
+            Help.ShowHelp(this, @"..\..\..\bestHelpInTown.chm", HelpNavigator.TopicId, "20");
         }
     }
 }

@@ -49,6 +49,7 @@ namespace allhlepidrash
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -78,7 +79,7 @@ namespace allhlepidrash
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(251, 268);
             this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
+            this.richTextBox1.Text = "Δουλειά στις 8 π.μ.\nΣούπερ μάρκετ στις 4 μ.μ\nΆθληση στις 6 μ.μ\n";
             this.richTextBox1.SelectionChanged += new System.EventHandler(this.richTextBox1_SelectionChanged);
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
@@ -274,8 +275,7 @@ namespace allhlepidrash
             "Αυτοκίνητο",
             "Μέσα Μαζικής Μεταφοράς",
             "Ποδήλατο",
-            "Πόδια",
-            "Συνδυασμός"});
+            "Πόδια"});
             this.comboBox1.Location = new System.Drawing.Point(512, 224);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(181, 23);
@@ -297,12 +297,23 @@ namespace allhlepidrash
             this.pictureBox8.Paint += new System.Windows.Forms.PaintEventHandler(this.pictureBox8_Paint);
             this.pictureBox8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox8_MouseClick);
             // 
+            // richTextBox4
+            // 
+            this.richTextBox4.Location = new System.Drawing.Point(844, 301);
+            this.richTextBox4.Name = "richTextBox4";
+            this.richTextBox4.ReadOnly = true;
+            this.richTextBox4.Size = new System.Drawing.Size(268, 96);
+            this.richTextBox4.TabIndex = 46;
+            this.richTextBox4.Text = "";
+            this.richTextBox4.Visible = false;
+            // 
             // smartPlaning
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
             this.ClientSize = new System.Drawing.Size(1117, 461);
+            this.Controls.Add(this.richTextBox4);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.richTextBox3);
@@ -362,5 +373,6 @@ namespace allhlepidrash
         private System.Windows.Forms.RichTextBox richTextBox3;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.RichTextBox richTextBox4;
     }
 }
