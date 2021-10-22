@@ -334,6 +334,7 @@ namespace allhlepidrash
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 20;
             this.pictureBox11.TabStop = false;
+            this.pictureBox11.Visible = false;
             // 
             // pictureBox12
             // 
@@ -633,7 +634,7 @@ namespace allhlepidrash
             // pictureBox19
             // 
             this.pictureBox19.Image = global::allhlepidrash.Properties.Resources.welcomeTokTok;
-            this.pictureBox19.Location = new System.Drawing.Point(226, 70);
+            this.pictureBox19.Location = new System.Drawing.Point(226, 66);
             this.pictureBox19.Name = "pictureBox19";
             this.pictureBox19.Size = new System.Drawing.Size(542, 333);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

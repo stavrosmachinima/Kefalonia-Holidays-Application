@@ -257,6 +257,12 @@ namespace allhlepidrash
                 if (!String.IsNullOrEmpty(textBox7.Text) && !String.IsNullOrEmpty(textBox8.Text) && !String.IsNullOrEmpty(textBox9.Text)
                  && !String.IsNullOrEmpty(textBox10.Text) && !String.IsNullOrEmpty(textBox11.Text) && !String.IsNullOrEmpty(textBox12.Text))
                 {
+                    if (textBox8.Text.Length != 19||textBox9.Text.Length!=3||textBox11.Text.Length!=2||textBox12.Text.Length!=2)
+                    {
+                        MessageBox.Show("You didn't enter your information correctly.");
+                        return;
+                    }
+                        
                     MessageBox.Show("You should expect your delivery soon.");
                     label14.Visible = true;
                     pictureBox19.Visible = true;
