@@ -233,7 +233,8 @@ namespace allhlepidrash
                 pictureBox16.Visible = false;
                 pictureBox17.Visible = false;
                 pictureBox18.Visible = false;
-                button1.Visible = false;
+              //  button1.Visible = false;
+               // button2.Visible = true;
                 textBox7.Visible = true;
                 textBox8.Visible = true;
                 textBox9.Visible = true;
@@ -249,37 +250,41 @@ namespace allhlepidrash
                 label2.Text = "Card Details";
                 button1.Text = "Submit";
                 textBox7.Text = total.ToString() + " €";
-                
+                count++;
+            }
+            else
+            {
+                if (!String.IsNullOrEmpty(textBox7.Text) && !String.IsNullOrEmpty(textBox8.Text) && !String.IsNullOrEmpty(textBox9.Text)
+                 && !String.IsNullOrEmpty(textBox10.Text) && !String.IsNullOrEmpty(textBox11.Text) && !String.IsNullOrEmpty(textBox12.Text))
+                {
+                    MessageBox.Show("You should expect your delivery soon.");
+                    label14.Visible = true;
+                    pictureBox19.Visible = true;
+                    textBox7.Visible = false;
+                    textBox8.Visible = false;
+                    textBox9.Visible = false;
+                    textBox10.Visible = false;
+                    textBox11.Visible = false;
+                    textBox12.Visible = false;
+                    label7.Visible = false;
+                    label8.Visible = false;
+                    label9.Visible = false;
+                    label10.Visible = false;
+                    label11.Visible = false;
+                    label12.Visible = false; ;
+                    label2.Visible = false;
+                    button1.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("You should fill all information to move on.");
+                }
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (!String.IsNullOrEmpty(textBox7.Text)&& !String.IsNullOrEmpty(textBox8.Text) && !String.IsNullOrEmpty(textBox9.Text)
-                 && !String.IsNullOrEmpty(textBox10.Text) && !String.IsNullOrEmpty(textBox11.Text) && !String.IsNullOrEmpty(textBox12.Text))
-            {
-                MessageBox.Show("You should expect your delivery soon.");
-                label14.Visible = true;
-                pictureBox19.Visible = true;
-                textBox7.Visible = false;
-                textBox8.Visible = false;
-                textBox9.Visible = false;
-                textBox10.Visible = false;
-                textBox11.Visible = false;
-                textBox12.Visible = false;
-                label7.Visible = false;
-                label8.Visible = false;
-                label9.Visible = false;
-                label10.Visible = false;
-                label11.Visible = false;
-                label12.Visible = false; ;
-                label2.Visible = false;
-                button1.Visible = false;
-            }
-            else
-            {
-                MessageBox.Show("You should fill all information to move on.");
-            }
+            
             
         }
 

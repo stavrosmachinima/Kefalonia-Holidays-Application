@@ -644,7 +644,7 @@ namespace allhlepidrash
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(397, 70);
+            this.label14.Location = new System.Drawing.Point(401, 29);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(182, 37);
             this.label14.TabIndex = 48;
