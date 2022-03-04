@@ -1,6 +1,3 @@
-Ονοματεπώνυμο: Σταύρος Πέππας
-ΑΜ: ΜΠΠΛ20064
+This is a University Project.
 
-Θα βρείτε την 1η γραπτή εργασία με τίτλο ΓΕ1.pdf
-Θα βρείτε την 2η γραπτή εργασία με τίτλο ΓΕ2.pdf
-allhlepidrash.sln είναι το solution για το Visual Studio.
+It is about a Holidays Website for Kefalonnia.
